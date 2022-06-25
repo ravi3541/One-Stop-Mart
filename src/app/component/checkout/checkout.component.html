@@ -1,0 +1,109 @@
+<div class="container-flex row  justify-content-evenly my-1 pb-2">
+    <div class="product-list col-6">
+        <div class="row">
+            <h5 class="col-6 text-start">Your Cart</h5>
+            <h5 class="col-6 text-end">Total items: {{cartItemsList.length}}</h5>
+        </div>
+        <div class="mt-4" *ngIf="cartItemsList.length==0">
+            <div class=" my-2">
+                <div class="col">
+                    <img class="empty-cart" src="http://santushtiorganic.com/assets/images/empty-cart.jpg" alt="">
+                </div>
+        
+            </div>
+        
+        </div>
+        <div class="cartList">
+            <div *ngIf="cartItemsList.length!=0">
+                <div class="card my-2 " *ngFor="let item of cartItemsList">
+            
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="{{item.img}}" alt="">
+                        </div>
+                        
+                    <div class="col-8">
+                        <h5>{{item.name}}</h5>
+                        <div class="row">
+                            <div class="col-8">
+                                Qty: {{item.quantity}} X &nbsp; &#x20b9; &nbsp;{{item.discounted_price }}
+                            </div>
+                            <div class="col-4">&#x20b9; &nbsp;{{item.total}}</div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                
+            </div>
+            </div>
+        </div>
+        
+
+    </div>
+
+    <div class="order-summary col-4  ">
+            <div class="d-flex flex-column " >
+                
+                    
+
+                    
+                    
+
+                    <h3 class="pt-3">Order Summary</h3>
+                    <div class="card p-2 px-3">
+                        <div class="row">
+                            <div class="col-7">Subtotal</div>
+                            <div  class="col-5 text-end">&#x20b9; &nbsp; {{subtotal}}</div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-7">Savings on MRP</div>
+                            <div class="col-5 text-end">&nbsp;  &#x20b9; &nbsp; {{savedOnMrp}}</div>
+                        </div>
+
+                        <div class="row my-2">
+                            <div class="col-5">Coupon Applied</div>
+                            <input [(ngModel)]="coupon" #input_coupon="ngModel" class="col-4 border rounded-3" type="text" style="text-transform:uppercase">
+                            <div class="col-3 text-end"><button (click)="applyCoupon()" class="btn p-0 m-0" [disabled]="subtotal==0 ">Apply</button>
+                            <button (click)="clearCoupon()" class="btn p-0 m-0" >Clear</button></div>
+                            <small class="text-danger" [(ngModel)]="couponInvalid" #error="ngModel" *ngIf="couponInvalid">Invalid Coupon </small>
+                        </div>
+
+                        <div class="row ">
+                            <div class="col-7">Coupon Discount</div>
+                            <div class="col-5 text-end">-&nbsp;  &#x20b9; &nbsp; {{couponDiscount}}</div>
+                            
+                        </div>
+
+                        <div class="row">
+                            <div class="col-7">Delivery Charge</div>
+                            <div  class="col-5 text-end">
+                                <ng-container *ngIf="deliveryCharge==0">FREE</ng-container>
+                                <ng-container *ngIf="deliveryCharge!=0">+&nbsp;  &#x20b9; &nbsp; {{deliveryCharge}}</ng-container></div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="card p-2 px-3 my-3 fw-bolder ">
+                        <div class="row" >
+                            <div class="col-7">Total Cost</div>
+                            <div class="col-5 text-end">&nbsp;  &#x20b9; &nbsp; {{grandTotal}}</div>
+                        </div>
+
+                        <div class="row" >
+                            <a class="btn btn-success fw-bolder mt-2">Proceed To Checkout</a>
+
+                        </div>
+                        
+                    </div>
+                    
+
+                   
+                
+
+            </div>
+    </div>
+</div>
+

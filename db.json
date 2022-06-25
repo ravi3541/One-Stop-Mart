@@ -1,0 +1,167 @@
+{
+
+    "Jewellery": [
+      {
+        "id": "1001",
+        "name": "Hot N Cold ring in 925 Silver",
+        "category": "ring",
+        "price": 6593,
+        "discounted_price":5211,
+        "units": 5,
+        "rating":4.3,
+        "desc": {
+            "width":"2.5cm",
+            "height":"8cm",
+            "weight":"30gms",
+            "material":"gold",
+            "text_desc":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus voluptates ea sint. Pariatur possimus suscipit blanditiis iure sunt deserunt facere?"
+        },
+        "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYz2Ojpa4pylrZ69tifOS6LEYFqydHBXsNPA&usqp=CAU"
+      },
+      {
+        "id": "1002",
+        "name": "Being My Own Navratna Galaxy necklace in Gold Plated 925 Silver",
+        "category": "necklace",
+        "price": 2999,
+        "discounted_price":2499,
+        "units": 5,
+        "rating":4.0,
+        "desc": {
+            "width":"2.1cm",
+            "height":"8cm",
+            "weight":"20gms",
+            "material":"gold",
+            "text_desc":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus voluptates ea sint. Pariatur possimus suscipit blanditiis iure sunt deserunt facere? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus voluptates ea sint. Pariatur possimus suscipit blanditiis iure sunt deserunt facere? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus voluptates ea sint. Pariatur possimus suscipit blanditiis iure sunt deserunt facere?Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus voluptates ea sint. Pariatur possimus suscipit blanditiis iure sunt deserunt facere?Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus voluptates ea sint. Pariatur possimus suscipit blanditiis iure sunt deserunt facere?Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus voluptates ea sint. Pariatur possimus suscipit blanditiis iure sunt deserunt facere?"
+        },
+        "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeZV7kz9kUdNUKACjiKvpxdPnGriLFq7GCmg&usqp=CAU"
+      },
+
+      {
+        "id": "1003",
+        "name": "Rise Above Bias ring in 925 Silver",
+        "category": "ring",
+        "price": 5699,
+        "discounted_price":4799,
+        "units": 5,
+        "rating":2.7,
+        "desc": {
+            "width":"2.5cm",
+            "height":"8cm",
+            "weight":"30gms",
+            "material":"gold",
+            "text_desc":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus voluptates ea sint. Pariatur possimus suscipit blanditiis iure sunt deserunt facere?"
+        },
+        "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIe_-yxjgshPAy8c0pAwYuLcLzaLMqwKz7Vg&usqp=CAU"
+      },
+      
+
+      {
+        "id": "1004",
+        "name": "Baari Barsi necklace in Gold Plated Brass",
+        "category": "necklace",
+        "price": 7899,
+        "discounted_price":6899,
+        "units": 5,
+        "rating":3.8,
+        "desc": {
+            "width":"2.5cm",
+            "height":"8cm",
+            "weight":"30gms",
+            "material":"gold",
+            "text_desc":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus voluptates ea sint. Pariatur possimus suscipit blanditiis iure sunt deserunt facere?"
+        },
+        "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1had_vNFBwX0QJlOTTdHVGNPZogJ0R0DkrQ&usqp=CAU"
+      },
+      {
+        "id": "1004",
+        "name": "Baari Barsi necklace in Gold Plated Brass",
+        "category": "necklace",
+        "price": 7899,
+        "discounted_price":6899,
+        "units": 5,
+        "rating":3.8,
+        "desc": {
+            "width":"2.5cm",
+            "height":"8cm",
+            "weight":"30gms",
+            "material":"gold",
+            "text_desc":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus voluptates ea sint. Pariatur possimus suscipit blanditiis iure sunt deserunt facere?"
+        },
+        "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1had_vNFBwX0QJlOTTdHVGNPZogJ0R0DkrQ&usqp=CAU"
+      },
+      {
+        "id": "1005",
+        "name": "Owning My Sassy Spirit earrings in 925 Silver",
+        "category": "earring",
+        "price": 2399,
+        "discounted_price":1999,
+        "units": 5,
+        "rating":2.9,
+        "desc": {
+            "width":"2.5cm",
+            "height":"8cm",
+            "weight":"30gms",
+            "material":"gold",
+            "text_desc":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus voluptates ea sint. Pariatur possimus suscipit blanditiis iure sunt deserunt facere?"
+        },
+        "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR_SBylxgSYrjfAgVbvYhXeCS3wvfkTr0Djg&usqp=CAU"
+      },
+
+      {
+        "id": "1006",
+        "name": "Midnight Memories bracelet in Gold Plated 925 Silver",
+        "category": "bracelet",
+        "price": 5555,
+        "discounted_price":4999,
+        "units": 5,
+        "rating":5.0,
+        "desc": {
+            "width":"2.5cm",
+            "height":"8cm",
+            "weight":"30gms",
+            "material":"gold",
+            "text_desc":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus voluptates ea sint. Pariatur possimus suscipit blanditiis iure sunt deserunt facere?"
+        },
+        "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTE2-A02c6kFzYHrJuuamO7RkMayQ0XxZBIcfytOUhFA7OelcS9FX7i-_CVYyHZQNqUYlg&usqp=CAU"
+      },
+
+      {
+        "id": "1007",
+        "name": "Shirin E earrings in 925 Silver",
+        "category": "earring",
+        "price": 3288,
+        "discounted_price":3199,
+        "units": 5,
+        "rating":2.7,
+        "desc": {
+            "width":"2.5cm",
+            "height":"8cm",
+            "weight":"30gms",
+            "material":"gold",
+            "text_desc":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus voluptates ea sint. Pariatur possimus suscipit blanditiis iure sunt deserunt facere?"
+        },
+        "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRI6ANdT0pQoPq-yQhKeoHKPtzIgDVRkLBsn-CDg30mkKQxBXtjMph8NR6akSHb3EH6Kt8&usqp=CAU"
+      },
+
+      {
+        "id": "1008",
+        "name": "Linking Love bracelet in Gold Plated 925 Silver",
+        "category": "bracelet",
+        "price": 4500,
+        "discounted_price":4299,
+        "units": 5,
+        "rating":3.5,
+        "desc": {
+            "width":"2.5cm",
+            "height":"8cm",
+            "weight":"30gms",
+            "material":"gold",
+            "text_desc":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus voluptates ea sint. Pariatur possimus suscipit blanditiis iure sunt deserunt facere?"
+        },
+        "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf7DN6EEQvm53dqIL4iFF8E1iAT26MGu18Tg&usqp=CAU"
+      }
+    ],
+    "Orders": [
+        
+    ]
+  }

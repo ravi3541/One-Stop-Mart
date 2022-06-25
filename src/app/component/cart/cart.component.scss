@@ -1,0 +1,27 @@
+@import "../../../styles/variables.scss";
+
+.card{
+    padding: 1rem;
+}
+
+img{
+    width: 8rem;
+
+}
+.btn-remove .btn-add{
+    font-size: 5px;
+    padding:3px;
+}
+
+
+.empty-cart{
+    width: 100%;
+    // padding-left: ;
+}
+
+.btn-trash{
+    background-color: $buynow-btn-bg;
+    :hover{
+        background-color: $buynow-hover;
+    }
+}

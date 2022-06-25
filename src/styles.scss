@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,700&family=Questrial&family=Righteous&display=swap');
+@import "./styles/variables.scss";
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-family: 'Righteous', cursive;
+    font-weight: 400;
+    
+
+}
+
+
+body{
+    background-color:$body-bg ;
+    font-family: 'Questrial', sans-serif;
+}
+
+.product-grid{
+    padding-top: 6rem;
+}
+

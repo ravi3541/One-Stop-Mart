@@ -1,0 +1,57 @@
+header {
+  background-color: #F38181;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 0.2rem;
+  padding-top: 0.2rem;
+  position: fixed;
+  z-index: 4;
+  text-transform: uppercase;
+  font-family: "Rubik Moonrocks", cursive;
+}
+header a {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+header a, header i {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #06283D;
+}
+header .left-nav {
+  padding-left: 2rem;
+}
+header .right-nav {
+  padding-right: 2rem;
+}
+header .nav-btn:hover {
+  border-bottom: 2px solid #06283D;
+}
+header .cart-count {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  font-weight: 800;
+  border: 0px solid #47B5FF;
+  border-radius: 5px;
+  padding-left: 3px;
+  padding-right: 3px;
+  padding-top: 1px;
+  padding-bottom: 0px;
+  position: relative;
+  background-color: #47B5FF;
+  top: 0px;
+  right: 10px;
+}
+header .wish-count {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  font-weight: 800;
+  border: 0px solid #47B5FF;
+  border-radius: 5px;
+  padding-left: 3px;
+  padding-right: 3px;
+  padding-top: 1px;
+  padding-bottom: 0px;
+  position: relative;
+  background-color: #47B5FF;
+}/*# sourceMappingURL=header.component.css.map */

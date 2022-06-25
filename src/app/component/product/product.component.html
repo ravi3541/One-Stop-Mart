@@ -1,0 +1,39 @@
+
+<div class="container-flex pt-5">
+    <a routerLink="" class=" btn-back fs-5 "> <i class="fa-solid fa-arrow-left "></i> Back</a>
+    <div class="row d-flex justify-content-center">
+        
+
+        <div class="col-5 left"><img src="{{jw[0].img}}" class="card-img-top border" alt="...">
+        </div>
+        <div class="col-5 right">
+            <div class="d-flex flex-column">
+                <h1>{{jw[0].name}}</h1>
+                <h4><i class="fa-solid fa-indian-rupee-sign"></i>{{jw[0].discounted_price}}  &nbsp;  <span class="mrp"><i class="fa-solid fa-indian-rupee-sign"></i> {{jw[0].price}}</span></h4>
+
+                <h4>Description</h4>
+                <p>{{jw[0].desc.text_desc}}
+                </p>
+                    <br>
+                    <ul>
+                        <li>Weight: {{jw[0].desc.weight}}</li>
+                        <li>Height: {{jw[0].desc.height}}</li>
+                        <li>Width: {{jw[0].desc.width}}</li>
+                        <li>Material: {{jw[0].desc.material}}</li>
+
+                    </ul>
+
+                
+               
+               <div><button  class="btn"></button>
+                
+                <a  class="btn btn-wish  me-3 " (click)="addToWishList(jw[0])"><i class="fa-regular fa-heart "></i> </a>
+                <a  class="btn btn-cart me-3 " (click)="addToCart(jw[0])"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a (click)="buyNow(jw[0])" class="btn btn-buy  "><i class="fa-solid fa-indian-rupee-sign"></i> &nbsp; Buy Now</a>
+                
+            </div>
+            </div>
+        </div>
+    </div>
+
+</div>

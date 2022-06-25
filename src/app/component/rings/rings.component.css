@@ -1,0 +1,34 @@
+.product-grid {
+  padding-top: 6rem;
+}
+
+.card {
+  width: 22rem;
+  margin-bottom: 3rem;
+}
+.card .card-img {
+  width: 21.87rem;
+  height: 18.27rem;
+}
+.card .card-title {
+  cursor: pointer;
+}
+.card .card-desc {
+  height: 3rem;
+  overflow: hidden;
+}
+.card .mrp {
+  text-decoration: line-through;
+}
+.card .rating {
+  background-color: #388e3c;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  color: white;
+}
+.card .rating i {
+  font-size: 0.7rem;
+}/*# sourceMappingURL=rings.component.css.map */

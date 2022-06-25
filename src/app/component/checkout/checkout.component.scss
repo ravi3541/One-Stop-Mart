@@ -1,0 +1,56 @@
+@import "../../../styles/variables.scss";
+
+.product-list{
+    
+    margin-top: 7rem;
+    border-right: 1px solid $header-bg;
+    align-items: center;
+    padding-left: 4rem;
+    padding-right: 4rem;
+   
+}
+
+
+.cartList{
+    height: 80vh;
+    overflow-y:auto;
+    padding-right: 17px; 
+    box-sizing: content-box;
+
+
+}
+
+.order-summary{
+    margin-top: 7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // border: 2px solid black;
+    
+
+
+    
+    .right-panel{
+        width: 35rem;
+        
+        
+        
+        padding: 0.5rem;
+        border: 1px solid $logo-clr;
+        border-radius: 4px;
+        a{
+            width: 100%;
+            text-decoration: none;
+            color: $logo-clr;
+        }
+    }
+}
+
+.card{
+    padding:1rem;
+
+    img{
+        width: 8rem;
+        height: 8rem;
+    }
+}

@@ -1,0 +1,66 @@
+@import "../../../styles/mixins.scss";
+@import "../../../styles/variables.scss";
+
+.favourites{
+    padding-top:6rem;
+}
+
+.card{
+    width: 100%;
+    height: 12rem;
+
+    img{
+        padding: 0.5rem;
+        width: 11rem;
+        height:11rem;
+    }
+
+    .card-title{
+        cursor: pointer ;
+    }
+    .mrp{
+        text-decoration: line-through;
+    }
+
+
+    .rating{
+        background-color: $rating-bg;
+        width: fit-content;
+        border-radius:5px ;
+        // padding-left:px;
+        font-size: 0.8rem;
+        color: $white;
+    
+        i{
+            font-size: 0.7rem;
+        }        
+}
+
+
+.btn-remove{
+    background-color: $danger-btn-bg;
+    :hover{
+        background-color: $danger-btn-hover;
+    }
+
+}
+
+.btn-move-cart{
+    background-color: $buynow-btn-bg;
+    :hover{
+        background-color: $buynow-hover;
+    }
+}
+
+}
+
+.empty-list{
+    padding-top: 10rem;
+
+
+    .empty-wishlist{
+        img{
+            width: 50%;
+    }
+    }
+}

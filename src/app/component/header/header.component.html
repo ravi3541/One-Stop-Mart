@@ -1,0 +1,51 @@
+<header class="container-fluid">
+    <div class="navbar">
+        <div class="left-nav">
+            <a href="#" routerLink=""><i class="fa-solid fa-gem"></i></a>
+            <a href="" routerLink="/earrings" class="nav-btn">Earrings</a>
+            <a href="" routerLink="/necklaces" class="nav-btn">Necklace</a>
+            <a href="" routerLink="/rings" class="nav-btn">Rings</a>
+            <a href="" routerLink="/bracelets" class="nav-btn">Bracelet</a>
+
+        </div>
+
+        <div class="right-nav">
+           
+            <a routerLink="/rewards" class="nav-btn"><i class="fa-solid fa-gift"></i> &nbsp; Rewards/Coupons</a>&nbsp;&nbsp;
+            <a routerLink="/wishlist" class="nav-btn"><i class="fa-solid fa-heart"></i><small class="cart-count">{{wishCount}}</small>Wishlist</a>&nbsp;&nbsp;
+            <a class="btn-cart nav-btn" data-bs-toggle="offcanvas" href="#sliding-cart" role="button" aria-controls="offcanvasExample" ><i class="fa-solid fa-cart-shopping"></i><small class="cart-count">{{cartCount}}</small>Cart</a>
+            <!-- Button trigger modal -->
+
+        </div>
+    </div>
+
+    
+</header>
+
+
+<div class="offcanvas offcanvas-end cart" tabindex="-1" id="sliding-cart" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="">Your Cart</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div>
+      <app-cart> </app-cart>  
+    </div>
+    
+    
+
+    
+
+
+  </div>
+  <div class="cart-footer d-flex justify-content-around">
+    <button [disabled]="cartCount==0" type="button" (click)="removeAllItems()" class="btn btn-danger " data-bs-dismiss="offcanvas">Empty Cart</button>
+    <button [disabled]="cartCount==0" type="button" routerLink="/checkout" class="btn btn-primary "  data-bs-dismiss="offcanvas"><i class="fa-solid fa-money-bill-transfer"></i> &nbsp; Checkout</button>
+  </div>
+</div>
+
+
+
+  
+  

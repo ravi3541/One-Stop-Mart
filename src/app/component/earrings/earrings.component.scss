@@ -1,0 +1,12 @@
+@import "../../../styles/mixins.scss";
+@import "../../../styles/variables.scss";
+
+
+
+.card{
+    @include card;
+}
+
+.btn-cart{
+    @include wish;
+}

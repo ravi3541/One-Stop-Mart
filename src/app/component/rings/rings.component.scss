@@ -1,0 +1,17 @@
+@import "../../../styles/mixins.scss";
+@import "../../../styles/variables.scss";
+
+.product-grid{
+    padding-top: 6rem;
+}
+
+
+.card{
+    @include card;
+}
+
+
+
+.btn-cart{
+    @include wish;
+}
