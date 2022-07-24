@@ -7,17 +7,19 @@ import { HeaderComponent } from './component/header/header.component';
 import { DashboardComponent } from './component/dashboard/dashboard.component';
 import { ProductComponent } from './component/product/product.component';
 import { CartComponent } from './component/cart/cart.component';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { FilterPipe } from './Pipe/filter.pipe';
 import { RingsComponent } from './component/rings/rings.component';
 import { NecklacesComponent } from './component/necklaces/necklaces.component';
 import { BraceletsComponent } from './component/bracelets/bracelets.component';
 import { EarringsComponent } from './component/earrings/earrings.component';
 import { CheckoutComponent } from './component/checkout/checkout.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { WishlistComponent } from './component/wishlist/wishlist.component';
 import { RewardsComponent } from './component/rewards/rewards.component';
+import { InterceptorService } from './service/interceptor.service';
+import { LoginComponent } from './component/login/login.component';
 
 @NgModule({
   declarations: [
@@ -33,16 +35,25 @@ import { RewardsComponent } from './component/rewards/rewards.component';
     EarringsComponent,
     CheckoutComponent,
     WishlistComponent,
-    RewardsComponent
+    RewardsComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    CommonModule
+    CommonModule,
+    ReactiveFormsModule
   ],
-  providers: [],
+  providers: [
+    {
+      provide:HTTP_INTERCEPTORS,
+      useClass:InterceptorService,
+      multi:true
+    },
+    CheckoutComponent
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,132 +1,111 @@
 import { Component, OnInit } from '@angular/core';
 import { CartService } from 'src/app/service/cart.service';
-import { CouponsService } from 'src/app/service/coupons.service';
 
 @Component({
   selector: 'app-checkout',
   templateUrl: './checkout.component.html',
   styleUrls: ['./checkout.component.scss']
 })
+
 export class CheckoutComponent implements OnInit {
-
-  constructor(private _cart:CartService,private _coupon:CouponsService) { }
-
+  
   subtotal:number=0;
   mrpTotal:number=0;
   savedOnMrp:number=0;
-
-  couponDiscountPercentage:number=0;
-  couponDiscount:number=0;
-  
+  couponDiscount:number=0; 
   deliveryCharge:number=0;
   grandTotal:number=0;
-
   coupon:string='';
   couponInvalid:boolean=false;
-
+  validCoupons =["EAR00010","NEC00020","RIN00015","BRC00025","BRCRIN20","NECRIN25","EARNEC20"]
   cartItemsList:any=[]
 
-  ngOnInit(): void {
+
+  constructor(private _cart:CartService,/*private _coupon:CouponsService*/) { 
+    /* 
+    Subscribeing to Behavior subjects of cart service
+    */
 
     this._cart.getjewellery().subscribe(response=>{
-      this.cartItemsList=response;
-      
+      this.cartItemsList=response;     
     })
 
+    this._cart.cartTotal.subscribe(res=>{
+      this.subtotal = res
+    })
 
-    
-    this.mrpTotal = this._cart.getMrpTotal();
-    this.subtotal = this._cart.getTotalPrice();
-  
-    this.savedOnMrp = this.mrpTotal - this.subtotal;
-    
-    if(this.couponDiscountPercentage>0){
-      this.couponDiscount = (this.subtotal*this.couponDiscountPercentage)/100  
-    }
-  
-    // this.couponDiscount = (this.subtotal*this.couponDiscountPercentage)/100
-  
-    if(this.subtotal>0 && this.subtotal<2000){
-        this.deliveryCharge=200;
-      }else{
-        this.deliveryCharge=0;
-      }
-  
-      if(this.subtotal>0){
-  
-        this.grandTotal = (this.subtotal - this.couponDiscount) + this.deliveryCharge;
-      }
-  
+    this._cart.mrpTotal.subscribe(res=>{
+      this.mrpTotal = res
+    })
 
-    console.log("Delivery charge = ",this.grandTotal)
+    this._cart.savedOnMrp.subscribe(res=>{
+      this.savedOnMrp = res
+    })
 
-    
-    
+    this._cart.deliveryCharge.subscribe(res=>{
+      this.deliveryCharge=res
+    })
+
+    this._cart.finalAmount.subscribe(res=>{
+      this.grandTotal=res
+    })
   }
 
-
-  applyCoupon(){
-    console.log("inside applycoupon")
-    console.log("Coupon code = "+this.coupon.toUpperCase())
+  
+  ngOnInit(): void {}
 
 
-//     1. EAR00010
-// 2. NEC00020
-// 3. RIN00015
-// 4. BRC00025
-// 5. BRCRIN20
-// 6. NECRIN25
-// 7. EARNEC20
-
-    switch (this.coupon.toUpperCase()){
-
-      case 'EAR00010':
-        this.couponDiscountPercentage=this._coupon.check_EAR00010();
-        break;
-
-      case 'NEC00020':
-        this.couponDiscountPercentage=this._coupon.check_NEC00020();
-        break;
-
-      
-      case 'RIN00015':
-        this.couponDiscountPercentage=this._coupon.check_RIN00015();
-        break;
-
-      case 'BRC00025':
-        this.couponDiscountPercentage=this._coupon.check_BRC00025();
-        break;
-
-      case 'BRCRIN20':
-        this.couponDiscountPercentage=this._coupon.check_BRCRIN20();
-        break;
-
-
-      case 'NECRIN25':
-        this.couponDiscountPercentage=this._coupon.check_NECRIN25();
-        break;
-
+  couponWorker(coupon:string){
+    if (typeof Worker !== 'undefined') {
+      // Create a new
+      const worker = new Worker(new URL('./../../wrokers/apply-coupon.worker', import.meta.url));
+      worker.onmessage = ({ data }) => {
         
-      case 'EARNEC20':
-      this.couponDiscountPercentage=this._coupon.check_EARNEC20();
-      
-      
-      break;
+        this.couponDiscount = data
+        if(data>0){
+          
+          this.grandTotal = this.subtotal + this.deliveryCharge - this.couponDiscount
+          this._cart.finalAmount.next(this.grandTotal) 
 
-      default:
-        this.couponDiscountPercentage=0;
-        this.couponInvalid=true;
-
-
+        }else{
+          this.couponInvalid=true
+        }
+       
+      };
+    
+      let data={
+        coupon:this.coupon,
+        cart:this.cartItemsList
+      }
+    
+      worker.postMessage(data);
+    } else {
+      console.log("Web workers are not supported in this environment.")
+     
     }
+  }
+  
+  
+  applyCoupon(){
+    // 1. EAR00010
+    // 2. NEC00020
+    // 3. RIN00015
+    // 4. BRC00025
+    // 5. BRCRIN20
+    // 6. NECRIN25
+    // 7. EARNEC20
+    /*
+    applying coupon discount using web worker
+    */
 
-    if(this.couponDiscountPercentage==0){
-      this.couponInvalid=true
-      this.ngOnInit();
-    }else{
+    if(this.validCoupons.includes(this.coupon.toLocaleUpperCase())){
       this.couponInvalid=false
-      
-      this.ngOnInit();
+      this.couponWorker(this.coupon)
+    }else{
+      let coupon = this.coupon
+      this.clearCoupon()
+      this.coupon=coupon
+      this.couponInvalid=true
     }
 
 
@@ -134,25 +113,15 @@ export class CheckoutComponent implements OnInit {
 
 
   clearCoupon(){
-    console.log("clearcpoupon")
-    this.coupon=''
-
-    this.subtotal=0;
-    this.mrpTotal=0;
-    this.savedOnMrp=0;
-
-    this.couponDiscountPercentage=0;
+    /*
+    Clearing coupon and recalculating  total
+    */
+   
+    this.coupon=''   
     this.couponDiscount=0;
-  
-    this.deliveryCharge=0;
-    this.grandTotal=0;
-    this.ngOnInit();
+    this.grandTotal= this.subtotal + this.deliveryCharge
+    this._cart.finalAmount.next(this.grandTotal)
+    this.couponInvalid=false
   }
-
-
-
-
-  
-  
 
 }

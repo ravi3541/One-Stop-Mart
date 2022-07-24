@@ -21,18 +21,14 @@ export class WishlistComponent implements OnInit {
     })
   }
 
+
   removeFromWishlist(jewellery:any){
     this._wish.removeFromWishList(jewellery);
-    console.log("Remove From Wish list");
-
   }
+
 
   moveToCart(jewellery:any){
     this._cart.addToCart(jewellery);
-
-    console.log("Move to Cart")
-
-
   }
 
 }

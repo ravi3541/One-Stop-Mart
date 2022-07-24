@@ -1,0 +1,12 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/mixins.scss";
+
+
+.btn-login{
+    background-color: $header-bg;
+    &:hover{
+        background-color: $buynow-btn-bg;
+        border:2px solid $header-bg;
+        color: $header-bg;
+    }
+}

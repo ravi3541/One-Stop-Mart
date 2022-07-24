@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CartService } from 'src/app/service/cart.service';
+import { CheckoutComponent } from '../checkout/checkout.component';
 
 @Component({
   selector: 'app-cart',
@@ -8,37 +9,49 @@ import { CartService } from 'src/app/service/cart.service';
 })
 export class CartComponent implements OnInit {
 
-  constructor(private _cart:CartService) { }
-
-  
+  constructor(private _cart:CartService, private _checkout:CheckoutComponent) { }
 
   public cartItemsList:any=[];
-  public grandtotal :number=0;
- 
-
-
-
+  public subtotal :number=0;
+  public mrptotal : number=0;
 
   ngOnInit(): void {
 
-    this._cart.getjewellery().subscribe(response=>{
+    this._cart.jewelleryList.subscribe(response=>{
       this.cartItemsList=response;
-      this.grandtotal = this._cart.getTotalPrice();
+      
     })
+
+
+    this._cart.mrpTotal.subscribe(res=>{
+      this.mrptotal = res
+    })
+
+
+    this._cart.cartTotal.subscribe(res=>{
+      this.subtotal = res
+    })
+
+
   }
 
   
 
-
-  addToCart(item:any){
-    this._cart.addToCart(item);
-    this.grandtotal = this._cart.getTotalPrice();
-
-  }
-
   removeFromCart(item:any){
     this._cart.removeItem(item);
-    this.grandtotal = this._cart.getTotalPrice();
+    this._checkout.clearCoupon()
+  }
+
+
+  addItemQty(item:any){
+    this._cart.addItemQty(item);
+    this._checkout.clearCoupon()
+  }
+
+
+  reduceItemQty(item:any){
+    this._cart.reduceItemQty(item);
+    this._checkout.clearCoupon()
   }
 
 }

@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { CartService } from 'src/app/service/cart.service';
 import { WishlistService } from 'src/app/service/wishlist.service';
-import { WishlistComponent } from '../wishlist/wishlist.component';
 
 
 @Component({
@@ -23,18 +22,15 @@ export class HeaderComponent implements OnInit {
     })
 
 
-
     this._wish.getWishList().subscribe(response=>{
       this.wishCount=response.length; 
     })
   }
 
-removeAllItems(){
-  this._cart.emptyCart();
-  this.route.navigate(['dashboard'])
 
-}
-
- 
+  removeAllItems(){
+    this._cart.emptyCart();
+    this.route.navigate(['dashboard'])
+  }
 
 }

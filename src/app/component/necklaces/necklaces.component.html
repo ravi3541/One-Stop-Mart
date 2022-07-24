@@ -1,51 +1,53 @@
 
 <div class="product-grid container-fluid px-5">
-
-
+  <div class="row d-flex flex-row justify-content-around"  >
     
-
-    <div class="row d-flex flex-row justify-content-around"  >
-       
-            <div class="card col-3" *ngFor="let item of necklace" >
-                <img src="{{item.img}}" class="card-img" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title card-desc" routerLink="/product/{{item.id}}">{{item.name}}</h5>
-                  <p class="card-text card-desc" >{{item.desc.text_desc}}</p>
-                
-                  <div class="row">
-                    <div class="col-3">
-                      <h5><i class="fa-solid fa-indian-rupee-sign"></i>{{item.discounted_price}}  </h5> 
-                    </div>
-                    <div class="col-7">
-                      <h6 class="mrp"><i class="fa-solid fa-indian-rupee-sign"></i> {{item.price}}</h6>
-                    </div>
-                    <div class="col-2"><button (click)="addToWishList(item)" class="btn">
-                      <i  class="fa-regular fa-heart"></i></button></div>
-                  </div>
-                     
+        <div class="card col-3" *ngFor="let item of necklaces" >
+            <img src="{{item.img}}" class="card-img" alt="...">
+            <div class="card-body">
+              <h5 class="card-title card-desc" routerLink="/product/{{item.id}}">{{item.name}}</h5>
+              <p class="card-text card-desc" >{{item.desc.text_desc}}</p>
             
-                  <span>
-                    <div >
-                        <span class="rating px-1 py-1">
-                            {{item.rating}}  <i class="fa-solid fa-star"></i> 
-                        </span> 
-
-                        <span>
-                            (23062)
-                        </span>
-                    </div> 
-                   
-                </span>
-                </div>
-                
-                <div class="card-body d-flex justify-content-around">
-                  
-                  <a (click)="addToCart(item)" class="btn btn-cart mx-1 col-6"><i class="fa-solid fa-cart-shopping"></i> &nbsp; Add to Cart</a>
-                  
-                  <a (click)="buyNow(item)" class="btn btn-buy mx-1 col-6"><i class="fa-solid fa-indian-rupee-sign"></i> &nbsp; Buy Now</a>
-                </div>
+              <div class="row">
+                  <div class="col-4">
+                      <h5><i class="fa-solid fa-indian-rupee-sign"></i>{{item.discounted_price}}  </h5> 
+                  </div>
+                  <div class="col-6">
+                      <h6 class="mrp"><i class="fa-solid fa-indian-rupee-sign"></i> {{item.price}}</h6>
+                  </div>
+                  <div class="col-2">
+                    <button (click)="addToWishList(item)" class="btn">
+                      <i  class="fa-regular fa-heart"></i>
+                    </button>
+                  </div>
               </div>
-        </div>
+                  
+        
+              <span>
+                <div >
+                    <span class="rating px-1 py-1">
+                        {{item.rating}}  <i class="fa-solid fa-star"></i> 
+                    </span> 
+
+                    <span>
+                        (23062)
+                    </span>
+                </div> 
+                
+            </span>
+            </div>
+            
+            <div class="card-body d-flex justify-content-around">
+              <a (click)="addToCart(item)" class="btn btn-cart mx-1 col-6">
+                <i class="fa-solid fa-cart-shopping"></i> &nbsp; <small>Add to Cart</small>
+              </a>
+              
+              <a (click)="buyNow(item)" class="btn btn-buy mx-1 col-6">
+                <i class="fa-solid fa-indian-rupee-sign"></i> &nbsp; <small>Buy Now</small>
+              </a>
+            </div>
+          </div>
     </div>
+</div>
 
 

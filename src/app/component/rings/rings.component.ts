@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { map } from 'rxjs';
 import { CartService } from 'src/app/service/cart.service';
@@ -14,11 +14,12 @@ export class RingsComponent implements OnInit {
 
   constructor(private _jewellery:JewelleryService,private _cart:CartService,private _wish:WishlistService,private route:Router) { }
 
-  ring:any;
-
+  @Input() rings:any;
 
   ngOnInit(): void {
-    this.getRings()
+    if(!this.rings){
+      this.getRings()
+    }
   }
 
 
@@ -26,6 +27,7 @@ export class RingsComponent implements OnInit {
     this._cart.addToCart(item);
     this.route.navigate(['checkout'])
   }
+
 
   addToCart(item){
     this._cart.addToCart(item);
@@ -38,24 +40,14 @@ export class RingsComponent implements OnInit {
 }
 
 
-
   getRings(){
-    //console.log("rings called")
 
     this._jewellery.getJewelleries()
     .pipe(map(jewellery=>jewellery.filter(jw=>jw.category=='ring')))
     .subscribe(
       response =>{
-        this.ring = response;
-
-        // for(let e of this.jewellery){
-        //  console.log(e.desc.text_desc)
-        // }
-
-      },(error)=>{
-        console.log("Unable to get Earring Data")
-      }
-      )
+        this.rings = response;
+      })
   }
 
 }

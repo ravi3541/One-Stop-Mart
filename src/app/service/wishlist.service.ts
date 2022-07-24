@@ -33,66 +33,24 @@ export class WishlistService {
     alreadyExist = (existingElement!=undefined)
 
     if(!alreadyExist){
-      //jewellery.quantity=1
-
-      console.log("jewellery qty = "+ jewellery.quantity)
-
       this.wishListItems.push(jewellery);
     this.wishList.next(this.wishListItems);
-    //this.getTotalPrice();
       
     }
-
-
-    console.log("--------wishListItems------",this.wishListItems)
     this.wishList.next(this.wishListItems);
   }
-
-
-
-  // getTotalPrice(){
-  //   let total=0;
-  //   this.wishListItems.map((item:any)=>{
-  //     item.total=item.quantity*item.discounted_price
-  //     total+=item.total
-  //   })
-
-  //   return total
-  // }
-
-
-  // getMrpTotal(){
-  //   let mrpTotal=0;
-  //   this.wishListItems.map((item:any)=>{
-  //     mrpTotal+=item.quantity*item.price
-      
-  //   })
-
-  //   return mrpTotal
-  // }
-
-  
 
 
   removeFromWishList(jewellery:any){
     this,this.wishListItems.map((item:any,index:any)=>{
       if(jewellery.id===item.id){
         this.wishListItems.splice(index,1);
-        //console.log("index = "+index)
-
-
       }
     })
 
     this.wishList.next(this.wishListItems)
-    //console.log("--------wishListItems------",this.wishListItems)
 
   }
 
-
-  // emptyCart(){
-  //   this.wishListItems=[]
-  //   this.wishList.next(this.wishListItems);
-  // }
 
 }

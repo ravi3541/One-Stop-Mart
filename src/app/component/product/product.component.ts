@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { CartService } from 'src/app/service/cart.service';
@@ -13,30 +14,22 @@ import { jewellery } from '../jewellery';
 })
 export class ProductComponent implements OnInit {
 
-  constructor(private route:ActivatedRoute,private router:Router,private _jewellery:JewelleryService,private _cart:CartService,private _wish:WishlistService) { }
+  constructor(private _http:HttpClient,private route:ActivatedRoute,private router:Router,private _jewellery:JewelleryService,private _cart:CartService,private _wish:WishlistService) { }
 
-    jw:jewellery;
+  jw:jewellery;
 
-    id:number;
-    
+  id:number;    
 
   ngOnInit(): void {
 
-    
-
     this.route.params.subscribe(data =>{
-     // console.warn("PID coming from url",data['id'])
       this.id = data['id']
-
-      
      })
+
 
      this._jewellery.getJewel(this.id).subscribe(response=>{
-        this.jw = response
-        //console.warn("JW ID = ",this.jw[0]['id'])
-        
+        this.jw = response   
      })
-
 
   }
 
@@ -46,15 +39,24 @@ export class ProductComponent implements OnInit {
     this.router.navigate(['checkout'])
   }
 
-  addToCart(item){
-    
-    this._cart.addToCart(item);
 
+  addToCart(item){  
+    this._cart.addToCart(item);
   }
 
 
   addToWishList(item){
       this._wish.addToWishList(item);
   }
+
+  
+  viewposts(){
+    let posts;
+    this._http.get("http://127.0.0.1:8000/post/allPosts").subscribe(res =>{
+      posts = res
+      posts = posts.data
+    })
+  }
+  
 
 }

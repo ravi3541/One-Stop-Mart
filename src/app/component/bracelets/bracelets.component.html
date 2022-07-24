@@ -13,10 +13,10 @@
                   <p class="card-text card-desc" >{{item.desc.text_desc}}</p>
                 
                   <div class="row">
-                    <div class="col-3">
+                    <div class="col-4">
                       <h5><i class="fa-solid fa-indian-rupee-sign"></i>{{item.discounted_price}}  </h5> 
                     </div>
-                    <div class="col-7">
+                    <div class="col-6">
                       <h6 class="mrp"><i class="fa-solid fa-indian-rupee-sign"></i> {{item.price}}</h6>
                     </div>
                     <div class="col-2"><button (click)="addToWishList(item)" class="btn">
@@ -39,9 +39,9 @@
                 </div>
                 
                 <div class="card-body d-flex justify-content-around">
-                  <a (click)="addToCart(item)" class="btn btn-cart mx-1 col-6"><i class="fa-solid fa-cart-shopping"></i> &nbsp; Add to Cart</a>
+                  <a (click)="addToCart(item)" class="btn btn-cart mx-1 col-6"><i class="fa-solid fa-cart-shopping"></i> &nbsp; <small>Add to Cart</small></a>
                   
-                  <a (click)="buyNow(item)" class="btn btn-buy mx-1 col-6"><i class="fa-solid fa-indian-rupee-sign"></i> &nbsp; Buy Now</a>
+                  <a (click)="buyNow(item)" class="btn btn-buy mx-1 col-6"><i class="fa-solid fa-indian-rupee-sign"></i> &nbsp; <small>Buy Now</small></a>
                 </div>
               </div>
         </div>

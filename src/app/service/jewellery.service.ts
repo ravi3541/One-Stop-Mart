@@ -3,10 +3,6 @@ import {HttpClient, HttpHeaders, HttpParams} from '@angular/common/http'
 import { Observable } from 'rxjs';
 import { jewellery } from '../component/jewellery';
 
-
-
-
-
 @Injectable({
   providedIn: 'root'
 })
@@ -15,7 +11,6 @@ export class JewelleryService {
   constructor(private http:HttpClient) { }
 
   
-
   getJewel(id){
     const head = new HttpHeaders({
       'content-type':'application/json',
@@ -40,15 +35,7 @@ export class JewelleryService {
       
     })
 
-    
-
-    //settin params
-    // const param = new HttpParams()
-    //   .set('id','12')
-    
-    
     return this.http.get<jewellery>('http://localhost:3000/Jewellery/',{headers:head})
-    
-
+  
   }
 }

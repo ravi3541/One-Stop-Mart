@@ -3,7 +3,6 @@
     <a routerLink="" class=" btn-back fs-5 "> <i class="fa-solid fa-arrow-left "></i> Back</a>
     <div class="row d-flex justify-content-center">
         
-
         <div class="col-5 left"><img src="{{jw[0].img}}" class="card-img-top border" alt="...">
         </div>
         <div class="col-5 right">
@@ -23,14 +22,12 @@
 
                     </ul>
 
-                
-               
                <div><button  class="btn"></button>
                 
                 <a  class="btn btn-wish  me-3 " (click)="addToWishList(jw[0])"><i class="fa-regular fa-heart "></i> </a>
-                <a  class="btn btn-cart me-3 " (click)="addToCart(jw[0])"><i class="fa-solid fa-cart-shopping"></i></a>
-                <a (click)="buyNow(jw[0])" class="btn btn-buy  "><i class="fa-solid fa-indian-rupee-sign"></i> &nbsp; Buy Now</a>
-                
+                <a  class="btn btn-cart me-3 " (click)="addToCart(jw[0])"><i class="fa-solid fa-cart-shopping"></i>&nbsp; <small>Add to Cart</small></a>
+                <a (click)="buyNow(jw[0])" class="btn btn-buy  "><i class="fa-solid fa-indian-rupee-sign"></i>&nbsp; <small>Buy Now</small></a>
+                <button (click)="viewposts()">view posts</button>
             </div>
             </div>
         </div>
