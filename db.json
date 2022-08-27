@@ -14,7 +14,7 @@
             "height":"8cm",
             "weight":"30gms",
             "material":"gold",
-            "text_desc":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus voluptates ea sint. Pariatur possimus suscipit blanditiis iure sunt deserunt facere?"
+            "text_desc":"Lorem ipsum dolor sit amet consectetur adipisicing elit.\\n Voluptatibus voluptates ea sint. \\n Pariatur possimus suscipit blanditiis iure sunt deserunt facere?"
         },
         "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYz2Ojpa4pylrZ69tifOS6LEYFqydHBXsNPA&usqp=CAU"
       },
@@ -31,7 +31,7 @@
             "height":"8cm",
             "weight":"20gms",
             "material":"gold",
-            "text_desc":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus voluptates ea sint. Pariatur possimus suscipit blanditiis iure sunt deserunt facere? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus voluptates ea sint. Pariatur possimus suscipit blanditiis iure sunt deserunt facere? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus voluptates ea sint. Pariatur possimus suscipit blanditiis iure sunt deserunt facere?Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus voluptates ea sint. Pariatur possimus suscipit blanditiis iure sunt deserunt facere?Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus voluptates ea sint. Pariatur possimus suscipit blanditiis iure sunt deserunt facere?Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus voluptates ea sint. Pariatur possimus suscipit blanditiis iure sunt deserunt facere?"
+            "text_desc":"Lorem ipsum dolor sit amet consectetur adipisicing elit.\n Voluptatibus voluptates ea sint. \n Pariatur possimus suscipit blanditiis iure sunt deserunt facere? \n Lorem ipsum dolor sit amet consectetur adipisicing elit. \n Voluptatibus voluptates ea sint.\n Pariatur possimus suscipit blanditiis iure sunt deserunt facere? \n Lorem ipsum dolor sit amet consectetur adipisicing elit. \n Voluptatibus voluptates ea sint.\n Pariatur possimus suscipit blanditiis iure sunt deserunt facere? \nLorem ipsum dolor sit amet consectetur adipisicing elit.\n Voluptatibus voluptates ea sint.\n Pariatur possimus suscipit blanditiis iure sunt deserunt facere? \nLorem ipsum dolor sit amet consectetur adipisicing elit.\n Voluptatibus voluptates ea sint.\n Pariatur possimus suscipit blanditiis iure sunt deserunt facere?Lorem ipsum dolor sit amet consectetur adipisicing elit.\n Voluptatibus voluptates ea sint.\n Pariatur possimus suscipit blanditiis iure sunt deserunt facere?"
         },
         "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeZV7kz9kUdNUKACjiKvpxdPnGriLFq7GCmg&usqp=CAU"
       },
