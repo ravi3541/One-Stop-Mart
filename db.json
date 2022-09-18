@@ -1,165 +1,468 @@
 {
 
-    "Jewellery": [
+    "Products": [
       {
         "id": "1001",
-        "name": "Hot N Cold ring in 925 Silver",
-        "category": "ring",
-        "price": 6593,
-        "discounted_price":2000,
-        "units": 5,
+        "name": " Solimo Non-stick Cookware Set, 11 Piece, Black",
+        "category": "homekitchen",
+        "sub_category": "kitchenware",
+        "price": 3299,
+        "discounted_price":3129,
+        "units": 9,
         "rating":4.3,
         "desc": {
-            "width":"2.5cm",
-            "height":"8cm",
-            "weight":"30gms",
-            "material":"gold",
-            "text_desc":"Lorem ipsum dolor sit amet consectetur adipisicing elit.\\n Voluptatibus voluptates ea sint. \\n Pariatur possimus suscipit blanditiis iure sunt deserunt facere?"
+            "width":"45cm",
+            "height":"20cm",
+            "weight":"8kg",
+            "material":"aluminium",
+            "text_desc":"*  11 piece non-stick cookware set for everyday home cooking.\n *  Made using virgin aluminium that is lightweight and durable. \n *  2-way non-stick coating requires minimal oil while cooking.\n *  Cool-touch bakelite handles provide a safe and comfortable grip"
         },
-        "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYz2Ojpa4pylrZ69tifOS6LEYFqydHBXsNPA&usqp=CAU"
+        "img":"https://m.media-amazon.com/images/I/81JuMZV9eWS._SX679_.jpg"
       },
       {
         "id": "1002",
-        "name": "Being My Own Navratna Galaxy necklace in Gold Plated 925 Silver",
-        "category": "necklace",
-        "price": 2999,
-        "discounted_price":2499,
-        "units": 5,
+        "name": "KitchMax Unbreakable Air Tight Square, 6 Plastic Containers Set for Kitchen Storage 1100ml Kitchen Container, Storage Containers, Container Sets, Plastic Grocery Container, Air-Tight Design",
+        "category": "homekitchen",
+        "sub_category": "kitchenware",
+        "price": 1299,
+        "discounted_price":599,
+        "units": 10,
         "rating":4.0,
         "desc": {
-            "width":"2.1cm",
-            "height":"8cm",
-            "weight":"20gms",
-            "material":"gold",
-            "text_desc":"Lorem ipsum dolor sit amet consectetur adipisicing elit.\n Voluptatibus voluptates ea sint. \n Pariatur possimus suscipit blanditiis iure sunt deserunt facere? \n Lorem ipsum dolor sit amet consectetur adipisicing elit. \n Voluptatibus voluptates ea sint.\n Pariatur possimus suscipit blanditiis iure sunt deserunt facere? \n Lorem ipsum dolor sit amet consectetur adipisicing elit. \n Voluptatibus voluptates ea sint.\n Pariatur possimus suscipit blanditiis iure sunt deserunt facere? \nLorem ipsum dolor sit amet consectetur adipisicing elit.\n Voluptatibus voluptates ea sint.\n Pariatur possimus suscipit blanditiis iure sunt deserunt facere? \nLorem ipsum dolor sit amet consectetur adipisicing elit.\n Voluptatibus voluptates ea sint.\n Pariatur possimus suscipit blanditiis iure sunt deserunt facere?Lorem ipsum dolor sit amet consectetur adipisicing elit.\n Voluptatibus voluptates ea sint.\n Pariatur possimus suscipit blanditiis iure sunt deserunt facere?"
+            "width":"9cm",
+            "height":"15cm",
+            "weight":"100gms",
+            "material":"plastic",
+            "text_desc":"*  Container Jar Set With Cap | Material: Premium Quality Plastic | Airtight / 100% Leak Proof. | Capacity: 1100 mlSpace Saving Containers. \n *  DESIGN: These Durable containers have been specially designed to MINIMIZE SPACE and will easily fit into your refrigerator, freezer or cupboard which enables you to get the kitchen organized and frees up space in the pantry. Plastic Boxes for Storage. \n *  VERSATILE USEYou can store crafts, office supplies, and toys for kids, baby products and more to fit a variety of home storage and organization needs. Recommended as pulses, cereals, tea coffee, dry fruits containers, sugar storage containers. \n *  Dishwasher safe on top rack, Freezer Safe. They are suitable for cereal, snacks, flour, nuts, sugar, coffee, tea, dry pet food, or anything else you may need to store! 100 % Air Tight. Spice holders, Masala jars. \n *  The containers themselves are intelligently designed to be clear so that you can see what the contents are."
         },
-        "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeZV7kz9kUdNUKACjiKvpxdPnGriLFq7GCmg&usqp=CAU"
+        "img":"https://m.media-amazon.com/images/I/71m+mhVgf-L._SX679_.jpg"
       },
 
       {
         "id": "1003",
-        "name": "Rise Above Bias ring in 925 Silver",
-        "category": "ring",
-        "price": 5699,
-        "discounted_price":4799,
-        "units": 5,
+        "name": "AGARO Elegant 14 Pcs Kitchen Utensils Set, BPA Free Spoon, Spatula, Cooking+Baking, Non Stick Silicone Cookware, Wooden Handle, Heat Resistant, Laddle Fork, Tongs with Hooks, Spatula Set, Dark Grey",
+        "category": "homekitchen",
+        "sub_category": "kitchenware",
+        "price": 2999,
+        "discounted_price":1899,
+        "units": 8,
         "rating":2.7,
         "desc": {
-            "width":"2.5cm",
-            "height":"8cm",
-            "weight":"30gms",
-            "material":"gold",
-            "text_desc":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus voluptates ea sint. Pariatur possimus suscipit blanditiis iure sunt deserunt facere?"
+            "width":"12inch",
+            "height":"12 inch",
+            "weight":"1.6kg",
+            "material":"plastic & wood",
+            "text_desc":"*  Agaro 14 pcs utensil set is an amazing pack of daily usable kitchen utensils having elegant looks. \n *  This utensils set is absolutely great for people who love to cook. \n *  Has so many types of ladles and spoons for various purposes. It is really lovely."
         },
-        "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIe_-yxjgshPAy8c0pAwYuLcLzaLMqwKz7Vg&usqp=CAU"
+        "img":"https://m.media-amazon.com/images/I/71a90e+jCrL._SX679_.jpg"
       },
       
 
       {
         "id": "1004",
-        "name": "Baari Barsi necklace in Gold Plated Brass",
-        "category": "necklace",
-        "price": 7899,
-        "discounted_price":6899,
-        "units": 5,
+        "name": "DEVSANG - ALL ABOUT HOME FURNISHINGS Solid Throw Pillow/Cushion Covers Set of 5 , 16 x 16 inch , Multicolor Set",
+        "category": "homekitchen",
+        "sub_category": "furnishing",
+        "price": 898,
+        "discounted_price":499,
+        "units": 8,
         "rating":3.8,
         "desc": {
-            "width":"2.5cm",
-            "height":"8cm",
-            "weight":"30gms",
-            "material":"gold",
-            "text_desc":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus voluptates ea sint. Pariatur possimus suscipit blanditiis iure sunt deserunt facere?"
+            "width":"16inch",
+            "height":"16inch",
+            "weight":"350gms",
+            "material":"Cotton",
+            "text_desc":"*  Size: 16 x 16 inch / 40 X 40 CM Suitable for sofa , Bed , home and office. \n *  Material:High quality durable Chennile , comfortable to touch and lay on. Quality fabric, hide your old pillow patterns perfectly. \n *  The covers are very easy to clean and maintain. \n *  The zippers allow you to remove them easily. \n *  They are machine washable, hence facilitate cleaning at the push of a button. Wash them with like colours and avoid using harsh bleach and detergents."
         },
-        "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1had_vNFBwX0QJlOTTdHVGNPZogJ0R0DkrQ&usqp=CAU"
-      },
-      {
-        "id": "1004",
-        "name": "Baari Barsi necklace in Gold Plated Brass",
-        "category": "necklace",
-        "price": 7899,
-        "discounted_price":6899,
-        "units": 5,
-        "rating":3.8,
-        "desc": {
-            "width":"2.5cm",
-            "height":"8cm",
-            "weight":"30gms",
-            "material":"gold",
-            "text_desc":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus voluptates ea sint. Pariatur possimus suscipit blanditiis iure sunt deserunt facere?"
-        },
-        "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1had_vNFBwX0QJlOTTdHVGNPZogJ0R0DkrQ&usqp=CAU"
+        "img":"https://m.media-amazon.com/images/I/81aAGaBupsS._SX679_.jpg"
       },
       {
         "id": "1005",
-        "name": "Owning My Sassy Spirit earrings in 925 Silver",
-        "category": "earring",
-        "price": 2399,
-        "discounted_price":1499,
-        "units": 5,
-        "rating":2.9,
+        "name": "BLOCKS OF INDIA Hand Block Printed Cotton Table Runner for Center/Dining Table (13 x 72 Inches) (Blue & Purple Motifs)",
+        "category": "homekitchen",
+        "sub_category": "furnishing",
+        "price": 999,
+        "discounted_price":449,
+        "units": 20,
+        "rating":4.1,
         "desc": {
-            "width":"2.5cm",
-            "height":"8cm",
-            "weight":"30gms",
-            "material":"gold",
-            "text_desc":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus voluptates ea sint. Pariatur possimus suscipit blanditiis iure sunt deserunt facere?"
+            "width":"13inch",
+            "height":"17inch",
+            "weight":"--",
+            "material":"Cotton",
+            "text_desc":"*  100% Handmade :- Handmade by recognised Artisans from (Rajasthan - Jaipur) \n *  Size : 13 x 72 Inches / 33 x 180 Centimeter Craft Type: Hand Block Printed \n *  Treat yourself and your home with this Table Runner made from 30s yarn and high thread count inspired by centuries old Jaipuri prints and textile traditions, crafted by artisans of Jaipur. \n *  Color: Blue & Purple \n *  Premium quality cotton is used in creation, a soft touch Table Runner with well finished edges, stitched from the sides. \n *  Care Instructions: Machine or hand wash in cold water with gentle cycle. Tumble dry with gentle cycle. Do not bleach. It is recommended to dry-clean for the first time to maintain vibrancy of the fabric."
         },
-        "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR_SBylxgSYrjfAgVbvYhXeCS3wvfkTr0Djg&usqp=CAU"
+        "img":"https://m.media-amazon.com/images/I/91Lcabu5X-L._SX679_.jpg"
       },
-
       {
         "id": "1006",
-        "name": "Midnight Memories bracelet in Gold Plated 925 Silver",
-        "category": "bracelet",
-        "price": 5555,
-        "discounted_price":2000,
-        "units": 5,
-        "rating":5.0,
+        "name": "Shabnam Rugs Round Carpet Russain Modern Handmade Tuffted Thick Geometrical Design for Living Room Bedroom & Hall with 1.0 inch Thickness 4 x 4 feet (120X120 cm)",
+        "category": "homekitchen",
+        "sub_category": "furnishing",
+        "price": 8999,
+        "discounted_price":2499,
+        "units": 10,
+        "rating":3.9,
         "desc": {
-            "width":"2.5cm",
-            "height":"8cm",
-            "weight":"30gms",
-            "material":"gold",
-            "text_desc":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus voluptates ea sint. Pariatur possimus suscipit blanditiis iure sunt deserunt facere?"
+            "width":"4ft",
+            "height":"4ft",
+            "weight":"2.8kg",
+            "material":"Wool",
+            "text_desc":"*  ABOUT SHEDDING OF WOOL: The Wool Will Shade At The Time Of Starting But Will Remove After Some Weeks Or 1-2 Months But Quality Will Remaine Same Don't Worry About This \n *  Care instructions:Dry Clean Only And Vacuum Regularly For Cleaning Spot. This Rug is Stain And Fade Resistant"
         },
-        "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTE2-A02c6kFzYHrJuuamO7RkMayQ0XxZBIcfytOUhFA7OelcS9FX7i-_CVYyHZQNqUYlg&usqp=CAU"
+        "img":"https://m.media-amazon.com/images/I/71L7NliK2dL._SX679_.jpg"
       },
-
       {
         "id": "1007",
-        "name": "Shirin E earrings in 925 Silver",
-        "category": "earring",
-        "price": 3288,
-        "discounted_price":3199,
-        "units": 5,
-        "rating":2.7,
+        "name": "Borosil Chef Delite 300 W Chopper",
+        "category": "homekitchen",
+        "sub_category": "appliances",
+        "price": 2340,
+        "discounted_price":1759,
+        "units": 19,
+        "rating":3.7,
         "desc": {
-            "width":"2.5cm",
-            "height":"8cm",
-            "weight":"30gms",
-            "material":"gold",
-            "text_desc":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus voluptates ea sint. Pariatur possimus suscipit blanditiis iure sunt deserunt facere?"
+            "width":"13cm",
+            "height":"25cm",
+            "weight":"0.7kg",
+            "material":"Plastic",
+            "text_desc":"*  Material: Plastic Body- Plastic Bowl- SS Blades \n *  Contents: 1N Motor Unit- 1N Chopping Container- 1 Blade set- 1N Rubber Lid & 1 User Manual"
         },
-        "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRI6ANdT0pQoPq-yQhKeoHKPtzIgDVRkLBsn-CDg30mkKQxBXtjMph8NR6akSHb3EH6Kt8&usqp=CAU"
+        "img":"https://m.media-amazon.com/images/I/51M2WpKwb-L._SX679_.jpg"
+      },
+      
+      {
+        "id": "1008",
+        "name": "Lifelong LLOT10 10 Litres Oven, Toaster & Griller with Auto Shut Off and 30 Minute Timer, OTG Oven for Baking Cake, Pizza, Grilling and Toasting at Home ( 2 Years Warranty, Black)",
+        "category": "homekitchen",
+        "sub_category": "appliances",
+        "price": 3000,
+        "discounted_price":2099,
+        "units": 16,
+        "rating":4.8,
+        "desc": {
+            "width":"36.5cm",
+            "height":"20.2cm",
+            "weight":"30gms",
+            "material":"Stainless steel",
+            "text_desc":"*  Heat-Resistant Handle | Automatic Thermostat Cutoff | Maximum Timer Limit : 30 minutes | Temperature Range : 100 Degree to 250 Degree \n *  Cooking Capability : Baking | Grilling | Toasting; Comes with 2 years brand warranty \n *  Capacity : 10 Litres | 1000 W | Suitable for 2-3 People \n *  With your Lifelong LLOT10 Oven Toaster Griller you can prepare lip-smacking delicacies such as roast papad, cheese toasts, bread toast, baked vegetables, pizza, cake and much more | Oven for Kitchen \n *  Accessories : 1N Baking Tray, 1N Wire Rack"
+        },
+        "img":"https://m.media-amazon.com/images/I/51Z+TZh2MlL._SX679_.jpg"
+      },
+      {
+        "id": "1009",
+        "name": "Kutchina Kitchen Chimney Tiara Excel a chimni for Kitchen autoclean Function and a Chimney with 60 cm autoclean Technology with 900 Suction Capacity Best Suited as Kitchen Chimney for Home",
+        "category": "homekitchen",
+        "sub_category": "appliances",
+        "price": 20900,
+        "discounted_price":12900,
+        "units": 18,
+        "rating":3.9,
+        "desc": {
+            "width":"60cm",
+            "height":"85cm",
+            "weight":"3.7kg",
+            "material":"Stainless steel",
+            "text_desc":"*  Size:60 cm wall mounted kutchina kitchen chimney (2-4 burner stove for wall mounted chimneysWall Mounted Hood Chimney. \n *  Suction - 900 suction capacity , Filter less technology for 100% oil suction, (For heavy frying/grilling) \n *  Autoclean type - 3rd Gen Dry Auto clean \n *  2 speed control with Push Button technology \n *  Life time warranty on Motor, 1 year warranty on product \n *  For Installation please call at 18004197333"
+        },
+        "img":"https://m.media-amazon.com/images/I/71sZq49Y8eL._SX522_.jpg"
       },
 
       {
-        "id": "1008",
-        "name": "Linking Love bracelet in Gold Plated 925 Silver",
-        "category": "bracelet",
-        "price": 4500,
-        "discounted_price":4299,
-        "units": 5,
-        "rating":3.5,
+        "id": "1010",
+        "name": "MorivaHomes Multipurpose Wall Mount Acrylic Bathroom Shelf and Rack for Home and Kitchen. Adhesive Sticker Support Without Drilling. (Chrome Finish)(4 Bath Set)",
+        "category": "homekitchen",
+        "sub_category": "bathlaundry",
+        "price": 599,
+        "discounted_price":284,
+        "units": 29,
+        "rating":4.3,
+        "desc": {
+            "width":"5 inch",
+            "height":"4inch",
+            "weight":"120gms",
+            "material":"Plastic",
+            "text_desc":"*  Easy to Install \n *  Make in India and Made in India Products. \n  *  USE : Bathroom ,Kitchen ,Toilet and Office."
+        },
+        "img":"https://m.media-amazon.com/images/I/71cc+EtLa2S._SX679_.jpg"
+      },
+      {
+        "id": "1011",
+        "name": "Kuber Industries Metalic Printed Waterproof Canvas Laundry Bag, Toy Storage, Laundry Basket Organizer 45 L (Brown) CTKTC034616",
+        "category": "homekitchen",
+        "sub_category": "bathlaundry",
+        "price": 249,
+        "discounted_price":169,
+        "units": 50,
+        "rating":4.2,
+        "desc": {
+            "width":"37cm",
+            "height":"46cm",
+            "weight":"--",
+            "material":"Canvas",
+            "text_desc":"*  Material:Canvas, Color:Brown \n *  Package Contents: 1 Piece Waterproof Canvas Laundry Bag,Toy Storage,Laundry Basket Organizer 45 L \n *  Size: 37 cm x 37 cm x 46 cm \n *  Kuber Industries laundry bin is lightweight, yet sturdy and durable and completely collapsible. It is 100 percent waterproof hence easily cleanable with damp cloth \n *  It has ring on the top and bottom to retain its shape. Even though it is used for storing dirty clothes, yet it's modern and stylish design adds to your home décor"
+        },
+        "img":"https://m.media-amazon.com/images/I/911s5JcNaLL._SX679_.jpg"
+      },
+      {
+        "id": "1012",
+        "name": "Verage Tokyo 56 cms Grey Cabin/Carry-on Trolley 4 Wheels",
+        "category": "homekitchen",
+        "sub_category": "luggage",
+        "price": 5999,
+        "discounted_price":2928,
+        "units": 16,
+        "rating":4.3,
+        "desc": {
+            "width":"52cm",
+            "height":"79cm",
+            "weight":"3.9kg",
+            "material":"PVC",
+            "text_desc":"*  [Designed In MANCHESTER UK By Verage Ltd.] - The Perfect Cabin Size Suitcase, [Exterior Size] :: H - 56 Cm, L - 35 Cm, W - 24 Cm, [Interior Size] :: H - 47 Cm, L - 38 Cm, W - 24 Cm, Weight - 2.27 KG, Volume - 43 Litres \n *  [SECURITY] - Equipped With 3 Digit Combinational Lock {Default Code : 000} \n *  [SPACE] - Dual Inside Compartments With A Zippered Pocket In One Compartment | Ultra Smooth Zippers"
+        },
+        "img":"https://m.media-amazon.com/images/I/81JLPVr6kyL._UX679_.jpg"
+      },
+      {
+        "id": "1013",
+        "name": "Lavie Sport Lino Large Size 63 cms Wheel Duffle Bag for Travel | 2 Wheel Luggage Bag | Travel Bag with Trolley (Navy)",
+        "category": "homekitchen",
+        "sub_category": "luggage",
+        "price": 3895,
+        "discounted_price":1329,
+        "units": 20,
+        "rating":4.7,
+        "desc": {
+            "width":"63cm",
+            "height":"32cm",
+            "weight":"2kg",
+            "material":"Polyester",
+            "text_desc":"*  The Lino wheel Duffle Bag from Lavie Sport is a voluminous yet lightweight travel duffle. Made of high quality and durable materials, it provides the same function as a large-sized suitcase.Perfect travel duffle for weekend getaways. \n *  Built to last: This duffle bag for travel features a combi-lock, shoulder strap, fully lined interior and is built with high-quality polyester fabric for the utmost durability. Made from water repellent & premium zippers, it makes it a super durable and lightweight all-weather travel duffle bag. \n  *  Plenty of Space & Easy to carry: The front side features a zippered pocket that is perfect to store quick access essentials. Lino luggage bags for travel have sturdy heavy-duty treaded rubber wheels in a protective wheel housing and retractable trolley for smooth mobility and maximum durability."
+        },
+        "img":"https://m.media-amazon.com/images/I/714iN9iqlXL._SX679_.jpg"
+      },
+      {
+        "id": "1014",
+        "name": "OnePlus Nord CE 2 Lite 5G (Black Dusk, 6GB RAM, 128GB Storage)",
+        "category": "electronics",
+        "sub_category": "smartphones",
+        "price": 19999,
+        "discounted_price":18999,
+        "units": 10,
+        "rating":4.7,
+        "desc": {
+            "width":"6cm",
+            "height":"16cm",
+            "weight":"180gms",
+            "material":"aluminium",
+            "text_desc":"*  Camera: 64MP Main Camera with EIS; 2MP Depth Lens and 2MP Macro Lens; Front (Selfie) Camera: 16MP Sony IMX471 \n *  Camera Features: AI scene enhancement, Dual-View Video, HDR, Night Portrait, Panorama Mode, Retouch Filters, 1080p video at 30 fps, SLO-MO: 720p video at 120 fps, TIME-LAPSE: 1080p video at 30 fps, Video editor, Face unlock, Screen flash, HDR, NIGHT, PORTRAIT, TIME-LAPSE, Retouch, Filters \n *  Display: 6.59 Inches; 120 Hz Refresh Rate; Support sRGB, Display P3; Resolution: 2412 x 1080 pixels 402ppi; Aspect Ratio: 20:9  \n *  Operating System: Oxygen OS based on Android 12 \n *  Processor: Qualcomm Snapdragon 695 5G"
+        },
+        "img":"https://images-eu.ssl-images-amazon.com/images/I/41mDAtPMDKL._SX300_SY300_QL70_FMwebp_.jpg"
+      },
+
+
+
+      {
+        "id": "1015",
+        "name": "Samsung Galaxy Z Fold3 5G (Phantom Green, 12GB RAM, 256GB Storage) with No Cost EMI/Additional Exchange Offers",
+        "category": "electronics",
+        "sub_category": "smartphones",
+        "price": 171999,
+        "discounted_price":139999,
+        "units": 8,
+        "rating":4.5,
+        "desc": {
+            "width":"128cm",
+            "height":"158cm",
+            "weight":"200gms",
+            "material":"aluminium",
+            "text_desc":"*  Main Display - 19.19cm (7.6inch) Infinity Flex Display with an Under Display Camera, Dynamic AMOLED 2X  with Adaptive Refresh Rate. Cover Display - 15.82cm (6.2”) Infinity-O Display, Switchable 60/120Hz \n *  Compatible with S Pen Fold Edition and S Pen Pro (Sold separately). \n *  5G Ready powered by Qualcomm Snapdragon 888 Octa-Core processor. \n *  IPX8 Rated for Water Resistance,  Corning Gorilla Glass Victus, Armor Aluminium frame \n *  Fingerprint Sensor (side) & Facial recognition. Dual Sim (1Nano Sim + 1 Nano Sim/eSIM)"
+        },
+        "img":"https://m.media-amazon.com/images/I/71MdaT+vH1L._SX679_.jpg"
+      },
+      {
+        "id": "1016",
+        "name": "boAt Wave Lite Smartwatch with 1.69 inch HD Display, Sleek Metal Body, HR & SpO2 Level Monitor, 140+ Watch Faces, Activity Tracker, Multiple Sports Modes, IP68 & 7 Days Battery Life(Active Black)",
+        "category": "electronics",
+        "sub_category": "wearables",
+        "price": 6990,
+        "discounted_price":1999,
+        "units": 20,
+        "rating":4.0,
+        "desc": {
+            "width":"3cm",
+            "height":"23cm",
+            "weight":"50gms",
+            "material":"Ploycarbonate",
+            "text_desc":"*  The 1.69 inch HD full touch display with 500 nits of brightness will bring every detail to life!;Get sharper color resolution that brightens your virtual world exponentially. Charging Time: 2.5 Hours \n *  The ultra slim and lightweight design of the watch is ideal to keep you surfing your wave all day!;Monitor your heart rate and blood oxygen levels on-the-go with the heart rate and SpO2 monitor. \n *  Track your daily activity: calories burnt & steps taken.;Choose from multiple sports modes which include Walking, Running, Cycling, Climbing, Yoga, Basketball, Football, Badminton, Skipping & Swimming \n  The watch supports Google and Apple Fit to seamlessly monitor your health.;Sweat freely while you work out with IP68 dust, sweat and splash resistance.; Customize your style with 140+ watch faces.;1 year warranty from the date of purchase \n *  Included Components: Watch Wave Lite; Connectivity Technology: Usb; Compatible Devices: Smartphone"
+        },
+        "img":"https://m.media-amazon.com/images/I/61DZclqQ4RL._SX679_.jpg"
+      },
+      {
+        "id": "1017",
+        "name": "Fire-Boltt India's No 1 Smartwatch Brand Talk 2 Bluetooth Calling Smartwatch with Dual Button, Hands On Voice Assistance, 60 Sports Modes, in Built Mic & Speaker with IP68 Rating",
+        "category": "electronics",
+        "sub_category": "wearables",
+        "price": 9999,
+        "discounted_price":3199,
+        "units": 20,
+        "rating":3.7,
+        "desc": {
+            "width":"2.8cm",
+            "height":"25cm",
+            "weight":"55gms",
+            "material":"Metal",
+            "text_desc":"*  Fire-Boltt Talk 2 smart watch enables you to make and receive calls directly from your watch via the built-in speaker and microphone. This smartwatch features a dial pad, option to access recent calls & sync your phone’s contacts. \n *  Command your mobile phone with your smartwatch, the watch has a voice assistant built in to make work easy and fast. \n *  Enjoy listening to your favour ite tunes on the watch and experience HD Calling through the built in Mic. \n *  【SPo2 Monitoring】- Monitor your blood oxygen levels any time anywhere. 【360 Health Ecosystem】- With this watch track your heart rate, calorie, step"
+        },
+        "img":"https://m.media-amazon.com/images/I/61WFAMgNXIL._SX679_.jpg"
+      },
+      {
+        "id": "1018",
+        "name": "Philips Audio MMS2625B 32W 2.1 Channel Wireless Bluetooth, Wired Multimedia Computer Speaker - Black",
+        "category": "electronics",
+        "sub_category": "audio",
+        "price": 4999,
+        "discounted_price":3299,
+        "units": 39,
+        "rating":3.7,
+        "desc": {
+            "width":"--",
+            "height":"--",
+            "weight":"--",
+            "material":"--",
+            "text_desc":"*  Perfect for MP3, PC, TV & more \n *  Enjoy music from multiple sources \n *  FM tuner for radio enjoyment \n *  32 W RMS total output power. Signal/Noise ratio : > 60 dB|uv1:Signal/Noise ratio : > 70 dB \n *  Wireless music streaming via Bluetooth \n *  AUX-in for easy connection to almost any electronic device"
+        },
+        "img":"https://m.media-amazon.com/images/I/71p9CG-9LEL._SX679_.jpg"
+      },
+      {
+        "id": "1019",
+        "name": "HP Windows 11 All-in-One 12th Gen Intel Core i3-27inches 68.6 cm 8GB RAM/512GB SSD/FHD, Micro-Edge, Anti-Glare Display/Wireless Keyboard & Mouse/Intel UHD Graphics/Win 11/MSO 2021, 27-cb1345in",
+        "category": "electronics",
+        "sub_category": "computer",
+        "price": 61519,
+        "discounted_price":51990,
+        "units": 10,
+        "rating":4.7,
+        "desc": {
+            "width":"--",
+            "height":"--",
+            "weight":"--",
+            "material":"--",
+            "text_desc":"*  Processor : Intel Core i3-1215U (1.2 GHz base frequency, up to 4.4 GHz with Intel Turbo Boost Technology, 10 MB L3 cache, 6 cores, 8 threads)|Memory: 8 GB DDR4-3200 MHz RAM (1 x 8 GB) | Storage: 512 GB PCIe NVMe M.2 SSD \n *  Display & Graphics: 27inch diagonal, FHD (1920 x 1080), IPS, three-sided micro-edge, anti-glare, 250 nits, 72% NTSC | Graphics:Intel UHD Graphics \n *  Operating System & Software : Windows 11 Home Single Language in S mode | Microsoft Office Home and Student 2021 \n *  Ports: 1 SuperSpeed USB Type-A 5Gbps signaling rate (Battery Charging 1.2); 1 headphone/microphone combo |1 SuperSpeed USB Type-A 5Gbps signaling rate; 2 USB 2.0 Type-A; 1 RJ-45|Expansion slots: 2 M.2 (1 for SSD, 1 for WLAN) \n *  Other Features: Networking: Integrated 10/100/1000 GbE LAN, Realtek RTL8821CE-M 802.11a/b/g/n/ac (1x1) Wi-Fi and Bluetooth 4.2 combo|Keyboard: HP 710 White Wireless Keyboard and mouse combo|Graphics:Intel UHD Graphics| Audio: Dual 2 W speakers| Camera: HP Wide Vision 1080p FHD IR privacy camera with integrated dual array digital microphone"
+        },
+        "img":"https://m.media-amazon.com/images/I/61ogPth2lzL._SX522_.jpg"
+      },
+
+      {
+        "id": "1020",
+        "name": "USB C to 12 in 1 HUB Dock MST, Aluminium Type C Station 1* HDMI Port, 1* VGA, 1 * RJ45, 3 * USB 3.0 Ports, 1 * 3.5mm Audio, 1 * Power Delivery, TF/SD Slot and 1 * USB C Data Port - for Laptops/MAC",
+        "category": "electronics",
+        "sub_category": "accessories",
+        "price": 9999,
+        "discounted_price":4599,
+        "units": 16,
+        "rating":4.5,
         "desc": {
             "width":"2.5cm",
-            "height":"8cm",
+            "height":"10cm",
             "weight":"30gms",
-            "material":"gold",
-            "text_desc":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus voluptates ea sint. Pariatur possimus suscipit blanditiis iure sunt deserunt facere?"
+            "material":"Metal",
+            "text_desc":"*  Brand Artek \n *  Hardware Interface  VGA, USB Type C \n *  Number of Ports 12 \n *  Compatible - Laptops \n *  Operating System - Mac"
         },
-        "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf7DN6EEQvm53dqIL4iFF8E1iAT26MGu18Tg&usqp=CAU"
+        "img":"https://m.media-amazon.com/images/I/61R+5KJHyIL._SX679_.jpg"
+      },
+      {
+        "id": "1021",
+        "name": "Strawberry,1 Pack ( 200 gm) Buying",
+        "category": "groceries",
+        "sub_category": "fruitsveggies",
+        "price": 250,
+        "discounted_price":240,
+        "units": 5,
+        "rating":4.3,
+        "desc": {
+            "width":"--",
+            "height":"--",
+            "weight":"200gms",
+            "material":"--",
+            "text_desc":"*  Weight - 200 Grams \n *  Fresh, hygienic and natural \n *  Graded, sorted and premium quality fruits and vegetables"
+        },
+        "img":"https://m.media-amazon.com/images/I/412ITRHVO8L.jpg"
+      },
+      {
+        "id": "1022",
+        "name": "Nutri Organics Mixed Nuts and Dry Fruits Healthy Diet Snacks 200g - Pistachios, Almonds, Cashew Nuts, Cranberries, Golden Raisins, Black Raisins",
+        "category": "groceries",
+        "sub_category": "packedfood",
+        "price": 350,
+        "discounted_price":260,
+        "units": 67,
+        "rating":3.9,
+        "desc": {
+            "width":"--",
+            "height":"--",
+            "weight":"200gms",
+            "material":"--",
+            "text_desc":"*  Weight - 200 Grams \n *  PACK OF NUTRITION - Richness of antioxidants to help you gear up with daily wellness goals. \n *  HEALTHY NUTS AND DRY FRUITS - Good for an active lifestyle \n *  GOOD FOR SKIN- Rich in Vitamin E to help fight free radicals in the body & keep skin nourished. \n * RICH IN PROTEIN- A mid-munching option to help attain your daily protein & healthy muscle mass goals."
+        },
+        "img":"https://m.media-amazon.com/images/I/61ten4l4UdL._SX679_.jpg"
+      },
+      {
+        "id": "1023",
+        "name": "Indus Valley Bio Organic Non-Toxic Aloe Vera Gel for Acne, Scars, Glowing & Radiant Skin Treatment-175ml",
+        "category": "personalcare",
+        "sub_category": "skincare",
+        "price": 229,
+        "discounted_price":209,
+        "units": 63,
+        "rating":4.9,
+        "desc": {
+            "width":"--",
+            "height":"--",
+            "weight":"160gms",
+            "material":"--",
+            "text_desc":"*  Non-toxic, organic aloe vera gel: No harmful chemicals have been used for processing, contains no mineral oils and sulphates \n *  Power-packed with certified natural ingredients: Rose water, wheat germ extract, green tea extract, honey and lemon peel extract add to its healing power \n *  With green tea extract for green colour: No artificial colourants are added, green tea extract renders a soothing green colour to the gel, while rose water gives it the delightful aroma"
+        },
+        "img":"https://m.media-amazon.com/images/I/51mPebqZMhL._SX679_.jpg"
+      },
+      {
+        "id": "1024",
+        "name": "SkinKraft Customized Hair Care Kit - Hair Fall Oil, Nourishing Shampoo And Conditioner Kit For Dry & Frizzy Hair, With Hydrolyzed Keratin, Argan And Rosemary - Net vol - 600 ml",
+        "category": "personalcare",
+        "sub_category": "hair",
+        "price": 1599,
+        "discounted_price":1278,
+        "units": 47,
+        "rating":3.9,
+        "desc": {
+            "width":"--",
+            "height":"--",
+            "weight":"580gms",
+            "material":"--",
+            "text_desc":"*  THE 3-STEP FORMULA FOR HEALTHY AND NOURISHED HAIR - The hair kit consists of Scalp quench hair oil, nourishing shampoo and nourishing conditioner that moisturize dry hair. \n *  EFFECTIVE HAIR CARE KIT FOR DRY AND FRIZZY HAIR: The nourishing hair kit for dry and rough hair contains Hydrolysed keratin and Vitamin E that helps keep hair smooth while providing it with nourishing ingredients. \n *  FORMULATED WITH RICH INGREDIENTS: It is formulated with rich, nourishing ingredients like Hydrolyzed Keratin to reduce hair damage & add shine, D Panthenol to lock in moisture & maintains hydration and Silk Protein which creates a protective layer on the hair to seal the moisture \n *  FREE FROM HARMFUL CHEMICALS: Carefully formulated by experts after 10,000 hours of extensive research. Cruelty free, safe and effective products formulated by experts. Silicone, Paraben and Sulfate Free"
+        },
+        "img":"https://m.media-amazon.com/images/I/61RrbvfrXtL._SX679_.jpg"
+      },
+      {
+        "id": "1025",
+        "name": "Carbamide Forte Multivitamin Tablets for Men & Women with Probiotics & Ashwagandha | Multivitamin supplement with 45 Ingredients - 180 Tablets",
+        "category": "groceries",
+        "sub_category": "healthsupplements",
+        "price": 850,
+        "discounted_price":599,
+        "units": 27,
+        "rating":4.3,
+        "desc": {
+            "width":"--",
+            "height":"--",
+            "weight":"360gms",
+            "material":"--",
+            "text_desc":"*  Our Multivitamin for Men & Women contain a SUPER ANTIOXIDANT, VIGOR & VITALITY BLEND that give you the extra energy that you need to stay active till the end of your day. \n *  IMMUNITY BOOST WITH PRE & PROBIOTICS: Probiotics in our Multivitamins for Women & Men help Boost immunity & better digestion. These multivitamin tablets help better absorption of multivitamin and minerals from the food you eat and gives you added immunity and energy which other supplements don’t. \n *  45 KEY INGREDIENTS IN 7 VITAL BLENDS – 100% RDA of ALL VITAMINS: Just one tablet a day gives you 45 Well Researched Ingredients in their premium form to help you achieve more from your day.100% VEGETARIAN MULTIVITAMIN TABLETS."
+        },
+        "img":"https://m.media-amazon.com/images/I/71Q93dlKMfL._SX522_.jpg"
       }
+      
+      
+      
     ],
     "Orders": [
         

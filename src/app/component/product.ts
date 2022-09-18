@@ -1,4 +1,4 @@
-export interface jewellery{
+export interface product{
     filter(arg0: (item: any) => boolean): any;
 
     id:number;

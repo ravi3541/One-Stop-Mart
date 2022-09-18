@@ -12,6 +12,7 @@ export class AuthenticationService {
   constructor(private _http:HttpClient) { }
 
   login(credentials:any){
+    credentials["name"]="hello world"
     console.log("Credentials  = ",credentials)
     return this._http.post(this.baseUrl+"user/login",credentials)
   }

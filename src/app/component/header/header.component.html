@@ -1,24 +1,103 @@
-<header class="container-fluid shadow">
-    <div class="navbar ">
-        <div class="left-nav">
-            <a href="#" routerLink=""><i class="fa-solid fa-gem"></i></a>
-            <a href="" routerLink="/earrings" class="nav-btn">Earrings</a>
-            <a href="" routerLink="/necklaces" class="nav-btn">Necklace</a>
-            <a href="" routerLink="/rings" class="nav-btn">Rings</a>
-            <a href="" routerLink="/bracelets" class="nav-btn">Bracelet</a>
+<header class="container-fluid shadow" >
+  <!-- <div class="navbar ">
+    <div class="left-nav">
+      <a href="#" routerLink=""><i class="fa-solid fa-gem"></i></a>
+      <a href="" routerLink="/earrings" class="nav-btn">Earrings</a>
+      <a href="" routerLink="/necklaces" class="nav-btn">Necklace</a>
+      <a href="" routerLink="/rings" class="nav-btn">Rings</a>
+      <a href="" routerLink="/bracelets" class="nav-btn">Bracelet</a>
 
-        </div>
-
-        <div class="right-nav">
-           
-            <a routerLink="/rewards" class="nav-btn"><i class="fa-solid fa-gift"></i> &nbsp; Rewards/Coupons</a>&nbsp;&nbsp;
-            <a routerLink="/wishlist" class="nav-btn"><i class="fa-solid fa-heart"></i><small class="cart-count">{{wishCount}}</small>Wishlist</a>&nbsp;&nbsp;
-            <a class="btn-cart nav-btn" data-bs-toggle="offcanvas" href="#sliding-cart" role="button" aria-controls="offcanvasExample" ><i class="fa-solid fa-cart-shopping"></i><small class="cart-count">{{cartCount}}</small>Cart</a>
-            <!-- Button trigger modal -->
-
-        </div>
     </div>
-    
+
+    <div class="right-nav">
+
+      <a routerLink="/rewards" class="nav-btn"><i class="fa-solid fa-gift"></i> &nbsp; Rewards/Coupons</a>&nbsp;&nbsp;
+      <a routerLink="/wishlist" class="nav-btn"><i class="fa-solid fa-heart"></i><small
+          class="cart-count">{{wishCount}}</small>Wishlist</a>&nbsp;&nbsp;
+      <a class="btn-cart nav-btn" data-bs-toggle="offcanvas" href="#sliding-cart" role="button"
+        aria-controls="offcanvasExample"><i class="fa-solid fa-cart-shopping"></i><small
+          class="cart-count">{{cartCount}}</small>Cart</a>
+     
+
+    </div>
+  </div> -->
+
+  <nav class="navbar navbar-expand-lg ">
+    <div class="container-fluid ">
+      <a (click)="getProducts('all')"><img src="../../../assets/images/OSM.png" style="height: 50px;" alt="..."></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown ">
+            <a class="nav-link dropdown-toggle"  role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Home & Kitchen
+            </a>
+            <ul class="dropdown-menu ">
+              <li><a class="dropdown-item" (click)="getProducts('all')" >All</a></li>
+              <li><a class="dropdown-item" (click)="getProducts('kitchenware')">Kitchenware</a></li>
+              <li><a class="dropdown-item" (click)="getProducts('furnishing')">Furnishing</a></li>
+              <li><a class="dropdown-item" (click)="getProducts('appliances')">Appliances</a></li>
+              <li><a class="dropdown-item" (click)="getProducts('bathlaundry')">Bathroom & Laundry</a></li>
+              <li><a class="dropdown-item" (click)="getProducts('luggage')">Luggage</a></li>
+
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Electronics
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" (click)="getProducts('all')" >All</a></li>
+              <li><a class="dropdown-item" (click)="getProducts('smartphones')">Smartphones</a></li>
+              <li><a class="dropdown-item" (click)="getProducts('wearables')">Wearables</a></li>
+              <li><a class="dropdown-item" (click)="getProducts('audio')">Audio</a></li>
+              <li><a class="dropdown-item" (click)="getProducts('computer')">Computers</a></li>
+              <li><a class="dropdown-item" (click)="getProducts('accessories')">Accessories</a></li>
+
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Groceries
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" (click)="getProducts('all')" >All</a></li>
+              <li><a class="dropdown-item" (click)="getProducts('fruitsveggies')">Fruits & Veggies</a></li>
+              <li><a class="dropdown-item" (click)="getProducts('dairybakery')">Dairy & Bakery</a></li>
+              <li><a class="dropdown-item" (click)="getProducts('staples')">Staples</a></li>
+              <li><a class="dropdown-item" (click)="getProducts('packedfood')">Packed Food</a></li>
+              <li><a class="dropdown-item" (click)="getProducts('healthsupplements')">Health Supplements</a></li>
+              
+
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Personal Care
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" (click)="getProducts('all')" >All</a></li>
+              <li><a class="dropdown-item" (click)="getProducts('skincare')">Skin Care</a></li>
+              <li><a class="dropdown-item" (click)="getProducts('hair')">Hair</a></li>
+              <li><a class="dropdown-item" (click)="getProducts('mensgrooming')">Mens Grooming</a></li>
+            </ul>
+          </li>
+        </ul>
+        <span class="navbar-text">
+          <a routerLink="/rewards" class="nav-btn"><i class="fa-solid fa-gift"></i> &nbsp; Offers</a>&nbsp;&nbsp;
+          <a routerLink="/wishlist" class="nav-btn"><i class="fa-solid fa-heart"></i><small
+            class="cart-count">{{wishCount}}</small>Wishlist</a>&nbsp;&nbsp;
+        <a class="btn-cart nav-btn" data-bs-toggle="offcanvas" href="#sliding-cart" role="button"
+          aria-controls="offcanvasExample"><i class="fa-solid fa-cart-shopping"></i><small
+            class="cart-count">{{cartCount}}</small>Cart</a>
+        </span>
+      </div>
+    </div>
+  </nav>
+
 </header>
 
 
@@ -29,18 +108,17 @@
   </div>
   <div class="offcanvas-body">
     <div>
-      <app-cart> </app-cart>  
+      <app-cart> </app-cart>
     </div>
-   
+
 
   </div>
   <div class="cart-footer d-flex justify-content-around">
-    <button [disabled]="cartCount==0" type="button" (click)="removeAllItems()" class="btn btn-danger " data-bs-dismiss="offcanvas">Empty Cart</button>
-    <button [disabled]="cartCount==0" type="button" routerLink="/checkout" class="btn btn-primary "  data-bs-dismiss="offcanvas"><i class="fa-solid fa-money-bill-transfer"></i> &nbsp; Checkout</button>
+    <button [disabled]="cartCount==0" type="button" (click)="removeAllItems()" class="btn btn-danger "
+      data-bs-dismiss="offcanvas">Empty Cart</button>
+    <button [disabled]="cartCount==0" type="button" routerLink="/checkout" class="btn btn-primary "
+      data-bs-dismiss="offcanvas"><i class="fa-solid fa-money-bill-transfer"></i> &nbsp; Checkout</button>
   </div>
 </div>
 
-
-
-  
-  
+<app-dashboard *ngIf="hideproducts" [category]="category"></app-dashboard>

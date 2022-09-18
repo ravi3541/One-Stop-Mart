@@ -2,7 +2,7 @@
     
         <div class="row d-flex flex-row justify-content-around"  >
            
-                <div class="card col-3" *ngFor="let item of rings" >
+                <div class="card col-3" *ngFor="let item of groceries" >
                     <img src="{{item.img}}" class="card-img" alt="...">
                     <div class="card-body">
                       <h5 class="card-title card-desc" routerLink="/product/{{item.id}}">{{item.name}}</h5>
@@ -10,12 +10,12 @@
                     
                       <div class="row">
                         <div class="col-4">
-                          <h5><i class="fa-solid fa-indian-rupee-sign"></i>{{item.discounted_price}}  </h5> 
+                          <h5 class="dis-price"><i class="fa-solid fa-indian-rupee-sign"></i>{{item.discounted_price}}  </h5> 
                         </div>
-                        <div class="col-6">
+                        <div class="col-5">
                           <h6 class="mrp"><i class="fa-solid fa-indian-rupee-sign"></i> {{item.price}}</h6>
                         </div>
-                        <div class="col-2"><button (click)="addToWishList(item)" class="btn">
+                        <div class="col-3 pe-1"><button (click)="addToWishList(item)" class="btn">
                           <i  class="fa-regular fa-heart"></i></button></div>
                       </div>
                          

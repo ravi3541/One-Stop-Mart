@@ -16,13 +16,14 @@ addEventListener('message', ( {data} ) => {
 function checkDiscount(cart, coupon){
   let categoryTotal = 0
   let discount = 0
+  console.log(cart)
 
 
   switch (coupon.toUpperCase()){
 
-    case 'EAR00010':
+    case 'HMKT0010':
       for(let i in cart){
-        if(cart[i].category =="earring"){
+        if(cart[i].category =="homekitchen"){
           categoryTotal += cart[i].total
         }
       }
@@ -35,10 +36,10 @@ function checkDiscount(cart, coupon){
       return discount
       break;
 
-    case 'NEC00020':
+    case 'ELEC0020':
       
       for(let i in cart){
-        if(cart[i].category =="necklace"){
+        if(cart[i].category =="electronics"){
           categoryTotal += cart[i].total
         }
       }
@@ -52,10 +53,10 @@ function checkDiscount(cart, coupon){
       break;
 
     
-    case 'RIN00015':
+    case 'GRCS0015':
 
       for(let i in cart){
-        if(cart[i].category =="ring"){
+        if(cart[i].category =="groceries"){
           categoryTotal += cart[i].total
         }
       }
@@ -67,9 +68,9 @@ function checkDiscount(cart, coupon){
       return discount
       break;
 
-    case 'BRC00025':
+    case 'PRCR0025':
       for(let i in cart){
-        if(cart[i].category =="bracelet"){
+        if(cart[i].category =="personalcare"){
           categoryTotal += cart[i].total
         }
       }
@@ -81,10 +82,10 @@ function checkDiscount(cart, coupon){
       return discount
       break;
 
-    case 'BRCRIN20':
+    case 'PRGR0020':
 
       for(let i in cart){
-        if(cart[i].category =="bracelet" || cart[i].category == "ring"){
+        if(cart[i].category =="personalcare" || cart[i].category == "groceries"){
           categoryTotal += cart[i].total
         }
       }
@@ -97,10 +98,10 @@ function checkDiscount(cart, coupon){
       break;
 
 
-    case 'NECRIN25':
+    case 'ELGR0025':
 
       for(let i in cart){
-        if(cart[i].category =="necklace" || cart[i].category == "ring"){
+        if(cart[i].category =="electronics" || cart[i].category == "groceries"){
           categoryTotal += cart[i].total
         }
       }
@@ -113,10 +114,10 @@ function checkDiscount(cart, coupon){
       break;
 
       
-    case 'EARNEC20':
+    case 'HKEL0020':
 
       for(let i in cart){
-        if(cart[i].category =="earring" || cart[i].category == "necklace"){
+        if(cart[i].category =="homekitchen" || cart[i].category == "electronics"){
           categoryTotal += cart[i].total
         }
       }

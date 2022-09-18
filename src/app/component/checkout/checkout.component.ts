@@ -17,7 +17,7 @@ export class CheckoutComponent implements OnInit {
   grandTotal:number=0;
   coupon:string='';
   couponInvalid:boolean=false;
-  validCoupons =["EAR00010","NEC00020","RIN00015","BRC00025","BRCRIN20","NECRIN25","EARNEC20"]
+  validCoupons =["HMKT0010","ELEC0020","GRCS0015","PRCR0025","PRGR0020","ELGR0025","HKEL0020"]
   cartItemsList:any=[]
 
 

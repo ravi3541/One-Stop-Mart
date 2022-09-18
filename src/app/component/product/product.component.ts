@@ -2,9 +2,11 @@ import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { CartService } from 'src/app/service/cart.service';
-import { JewelleryService } from 'src/app/service/jewellery.service';
+import { ProductService } from 'src/app/service/product.service';
 import { WishlistService } from 'src/app/service/wishlist.service';
-import { jewellery } from '../jewellery';
+import { product } from '../product';
+import { map } from 'rxjs';
+
 
 
 @Component({
@@ -14,9 +16,22 @@ import { jewellery } from '../jewellery';
 })
 export class ProductComponent implements OnInit {
 
-  constructor(private _http:HttpClient,private route:ActivatedRoute,private router:Router,private _jewellery:JewelleryService,private _cart:CartService,private _wish:WishlistService) { }
+  constructor(private _http:HttpClient,private route:ActivatedRoute,private router:Router,private _product:ProductService,private _cart:CartService,private _wish:WishlistService) {
+    router.events.subscribe((val)=>{
 
-  jw:jewellery;
+      this.route.params.subscribe(data =>{
+        this.id = data['id']
+        this.ngOnInit()
+       })
+    })
+   }
+
+  prod:product;
+  similar:any;
+  electronics:boolean;
+  homekitchen:boolean;
+  groceries:boolean;
+  personalcare:boolean;
 
   id:number;    
 
@@ -27,8 +42,36 @@ export class ProductComponent implements OnInit {
      })
 
 
-     this._jewellery.getJewel(this.id).subscribe(response=>{
-        this.jw = response   
+     this._product.getProduct(this.id).subscribe(response=>{
+        this.prod = response  
+        let category = this.prod[0].category
+        if (category=="electronics"){
+          this.electronics=true
+          this.homekitchen=false
+          this.groceries=false
+          this.personalcare=false
+        }else if (category=="homekitchen"){
+          this.homekitchen=true
+          this.electronics=false
+          this.groceries=false
+          this.personalcare=false
+        }else if (category=="groceries"){
+          this.groceries=true
+          this.electronics=false
+          this.homekitchen=false
+          this.personalcare=false
+        }else if (category=="personalcare"){
+          this.personalcare=true
+          this.electronics=false
+          this.homekitchen=false
+          this.groceries=false
+        }
+        this._product.getProducts()
+    .pipe(map(result=>result.filter(prod=>prod.category==category)))
+    .subscribe(
+      response =>{
+        this.similar = response;
+      })
      })
 
   }
@@ -49,14 +92,6 @@ export class ProductComponent implements OnInit {
       this._wish.addToWishList(item);
   }
 
-  
-  viewposts(){
-    let posts;
-    this._http.get("http://127.0.0.1:8000/post/allPosts").subscribe(res =>{
-      posts = res
-      posts = posts.data
-    })
-  }
   
 
 }

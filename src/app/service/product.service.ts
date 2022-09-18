@@ -1,17 +1,17 @@
 import { Injectable } from '@angular/core';
 import {HttpClient, HttpHeaders, HttpParams} from '@angular/common/http'
 import { Observable } from 'rxjs';
-import { jewellery } from '../component/jewellery';
+import { product } from '../component/product';
 
 @Injectable({
   providedIn: 'root'
 })
-export class JewelleryService {
+export class ProductService {
 
   constructor(private http:HttpClient) { }
 
   
-  getJewel(id){
+  getProduct(id){
     const head = new HttpHeaders({
       'content-type':'application/json',
       
@@ -21,21 +21,21 @@ export class JewelleryService {
     const param = new HttpParams()
       .set('id',id)
      
-    return this.http.get<jewellery>('http://localhost:3000/Jewellery/',{headers:head,params:param})
+    return this.http.get<product>('http://localhost:3000/Products/',{headers:head,params:param})
     
   }
 
 
   
 
-  getJewelleries():Observable<jewellery>{
+  getProducts():Observable<product>{
 
     const head = new HttpHeaders({
       'content-type':'application/json',
       
     })
 
-    return this.http.get<jewellery>('http://localhost:3000/Jewellery/',{headers:head})
+    return this.http.get<product>('http://localhost:3000/Products/',{headers:head})
   
   }
 }

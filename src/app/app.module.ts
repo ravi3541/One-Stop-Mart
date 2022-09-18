@@ -9,10 +9,10 @@ import { ProductComponent } from './component/product/product.component';
 import { CartComponent } from './component/cart/cart.component';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { FilterPipe } from './Pipe/filter.pipe';
-import { RingsComponent } from './component/rings/rings.component';
-import { NecklacesComponent } from './component/necklaces/necklaces.component';
-import { BraceletsComponent } from './component/bracelets/bracelets.component';
-import { EarringsComponent } from './component/earrings/earrings.component';
+import { GroceriesComponent } from './component/groceries/groceries.component';
+import { ElectronicsComponent } from './component/electronics/electronics.component';
+import { PersonalCareComponent } from './component/personalCare/personalCare.component';
+import { HomeKitchenComponent } from './component/homeKitchen/homeKitchen.component';
 import { CheckoutComponent } from './component/checkout/checkout.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
@@ -29,10 +29,10 @@ import { LoginComponent } from './component/login/login.component';
     ProductComponent,
     CartComponent,
     FilterPipe,
-    RingsComponent,
-    NecklacesComponent,
-    BraceletsComponent,
-    EarringsComponent,
+    GroceriesComponent,
+    ElectronicsComponent,
+    PersonalCareComponent,
+    HomeKitchenComponent,
     CheckoutComponent,
     WishlistComponent,
     RewardsComponent,

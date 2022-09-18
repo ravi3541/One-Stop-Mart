@@ -1,8 +1,8 @@
-import { Component, ElementRef, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { Component, Input, OnChanges, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 import {  map } from 'rxjs';
 import { CartService } from 'src/app/service/cart.service';
-import { JewelleryService } from 'src/app/service/jewellery.service';
+import { ProductService } from 'src/app/service/product.service';
 import { WishlistService } from 'src/app/service/wishlist.service';
 
 
@@ -11,81 +11,162 @@ import { WishlistService } from 'src/app/service/wishlist.service';
   templateUrl: './dashboard.component.html',
   styleUrls: ['./dashboard.component.scss']
 })
-export class DashboardComponent implements OnInit {
+export class DashboardComponent implements OnInit, OnChanges {
 
-  constructor(private _jewellery: JewelleryService,private _cart:CartService,private _wish:WishlistService, private route:Router) { }
+  constructor(private _product: ProductService,private _cart:CartService,private _wish:WishlistService, private route:Router, private router:ActivatedRoute) {
+    // alert(this.category)
+    route.events.subscribe((val)=>{
 
-  jewellery:any;
-  ring:any;
-  necklace:any;
-  bracelet:any;
-  earring:any;
+      this.router.params.subscribe(data =>{
+         alert
+         let  url = route.url
+        if(url.match("wishlist") || url.match("checkout") || url.match("rewards")){
+          this.filtered=false
+        }else{
+          this.filtered=true
+        }
+        this.ngOnInit()
+       })
+    })
+
+
+
+    this.getCategoryProducts(this.category)
+    this.filtered =false
+    this.noProductsfound=true
+    // this.ngOnInit()
+  }
+  
+  product:any;
+  groceries:any;
+  electronics:any;
+  personalCare:any;
+  homeKitchen:any;
+  allProducts:any;
   filter:boolean=false;
-  jewel_type:any;
+  prod_type:any;
+  filtered:boolean;
+  noProductsfound: boolean
+  
+  @Input() category:any;
+  
+  ngOnChanges():void{
+    this.getCategoryProducts(this.category)
+    console.log("dash", this.category)
+  }
  
   
   ngOnInit(): void {
-    this.getEarrings()
-    this.getNecklace()
-    this.getRings()
-    this.getBracelet()
+    // this.getHomeKitchen()
+    // this.getElectronics()
+    // this.getGroceries()
+    // this.getPersonalCare()
+    this.getCategoryProducts('all')
   }
 
 
   buyNow(item:any){
+    this.filtered=false
+
     this._cart.addToCart(item);
     this.route.navigate(['checkout'])
   }
 
 
-  addToWIshList(jewellery:any){
-    this._wish.addToWishList(jewellery)
+  addToWIshList(product:any){
+    this._wish.addToWishList(product)
   }
 
 
-  getEarrings(){
+  getHomeKitchen(){
 
-    this._jewellery.getJewelleries()
-    .pipe(map(jewellery=>jewellery.filter(jw=>jw.category=='earring')))
+    this._product.getProducts()
+    .pipe(map(result=>result.filter(prod=>prod.category=='homekitchen')))
     .subscribe(
       response =>{
-        this.earring = response;
+
+        this.allProducts = response;
+        console.log("Home Kitchen ", this.homeKitchen)
       })
   }
  
 
-  getNecklace(){
+  getElectronics(){
 
-    this._jewellery.getJewelleries()
-    .pipe(map(jewellery=>jewellery.filter(jw=>jw.category=='necklace')))
+    this._product.getProducts()
+    .pipe(map(result=>result.filter(prod=>prod.category=='electronics')))
     .subscribe(
       response =>{
-        this.necklace = response;
+        this.allProducts = response;
+        console.log("Home Electronics ", this.electronics)
       }
       )
   }
  
 
-  getBracelet(){
+  // getPersonalCare(){
 
-    this._jewellery.getJewelleries()
-    .pipe(map(jewellery=>jewellery.filter(jw=>jw.category=='bracelet')))
-    .subscribe(
-      response =>{
-        this.bracelet = response;
-      }
-      )
-  }
+  //   this._product.getProducts()
+  //   .pipe(map(result=>result.filter(prod=>prod.category=='personalcare')))
+  //   .subscribe(
+  //     response =>{
+  //       this.personalCare = response;
+  //       console.log("Personal Care ", this.personalCare)
+  //     }
+  //     )
+  // }
 
 
-  getRings(){
+  getGroceries(){
    
-    this._jewellery.getJewelleries()
-    .pipe(map(jewellery=>jewellery.filter(jw=>jw.category=='ring')))
+    this._product.getProducts()
+    .pipe(map(result=>result.filter(prod=>prod.category=='groceries')))
     .subscribe(
       response =>{
-        this.ring = response;
+        this.allProducts = response;
+        console.log("Groceries ", this.groceries)
       })
   }
+
+  getAllProducts(){
+    
+   
+    this._product.getProducts().subscribe(
+      response =>{
+        this.allProducts = response;
+          this.noProductsfound=false
+        })
+      }
+      
+      getCategoryProducts(category:any){
+        
+        if (category=='all'){
+          this.getAllProducts()
+        }else{
+          this.filtered=true;
+          this._product.getProducts()
+          .pipe(map(result=>result.filter(prod=>prod.sub_category==category)))
+          .subscribe(
+            response =>{
+              this.allProducts = response;
+              console.log("all prod ", this.allProducts)
+        if(this.allProducts.length==0 ){
+          this.noProductsfound=true
+        }
+      })
+
+    }
+  }
+
+
+  addToWishList(item){
+    this._wish.addToWishList(item);
+  }
+
+  addToCart(item){
+    this._cart.addToCart(item);
+  }
+
+
 
 }

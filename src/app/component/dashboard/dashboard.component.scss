@@ -1,6 +1,17 @@
 @import "../../../styles/variables.scss";
 @import "../../../styles/mixins.scss";
 
+
+
+.card{
+    @include card;
+}
+
+
+.btn-cart{
+    @include wish;
+}
+
 .sliding-cart{
     position: fixed;
     top:0;

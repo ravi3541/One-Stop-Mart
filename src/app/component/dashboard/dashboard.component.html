@@ -1,12 +1,102 @@
+    
     <!--Loading Individual components-->
-  <div class=" container-fluid ">
-    <div class="row">
-      <div class="col-md-3"><app-earrings [earrings]="earring"></app-earrings></div>
-      <div class="col-md-3"><app-necklaces [necklaces]="necklace"></app-necklaces></div>
-      <div class="col-md-3"><app-rings [rings]="ring"></app-rings></div>
-      <div class="col-md-3"><app-bracelets [bracelets]="bracelet"></app-bracelets></div>
-      
+    
+  <div *ngIf="filtered" class="container-fluid col-11 pt-5 px-5">
+    
+    <div class="product-banner px-5 pt-5">
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <a (click)="getElectronics()" style="cursor: pointer;">
+              <img style="height:400px; max-height: 400px; width: auto;" src="https://s.alicdn.com/@img/imgextra/i2/O1CN01Y4vbuq1uDshof98mD_!!6000000006004-0-tps-968-230.jpg" class="d-block w-100 " alt="...">
+            </a>
+          </div>
+          <div class="carousel-item">
+            <a (click)="getHomeKitchen()" style="cursor: pointer;">
+            <img style="height:400px; max-height: 400px; width: auto;" src="https://s.alicdn.com/@img/imgextra/i2/O1CN01KnRbNX1r3rEfWH9dx_!!6000000005576-0-tps-990-400.jpg" class="d-block w-100" alt="...">
+            </a>
+          </div>
+          <div class="carousel-item">
+            <a (click)="getGroceries()" style="cursor: pointer;">
+            <img style="height:400px; max-height: 400px; width: auto;" src="https://www.shalimarindiangrocery.com/files/images/catalog/sub-banner/center-2.jpg" class="d-block w-100" alt="...">
+            </a>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
     </div>
+    
+    <!-- <div class="row">
+      <div class=""><app-electronics [electronics]="electronics"></app-electronics></div>
+      <div class=""><app-groceries [groceries]="groceries"></app-groceries></div>
+      <div class=""><app-personalCare [personalCare]="personalCare"></app-personalCare></div>
+      <div class=""><app-homeKitchen [homeKitchen]="homeKitchen"></app-homeKitchen></div>
+      
+    </div> -->
+
+
+<div class="product-grid container-fluid px-5" *ngIf="filtered">
+  <div class="row d-flex flex-row justify-content-around"  >
+    
+        <div class="card col-3 shadow" *ngFor="let item of allProducts" >
+            <img src="{{item.img}}" class="card-img" alt="...">
+            <div class="card-body">
+              <h5 class="card-title card-desc" routerLink="/product/{{item.id}}">{{item.name}}</h5>
+              <p class="card-text card-desc" >{{item.desc.text_desc}}</p>
+            
+              <div class="row">
+                  <div class="col-4 ">
+                      <h5 class="dis-price"><i class="fa-solid fa-indian-rupee-sign "></i>{{item.discounted_price}}  </h5> 
+                  </div>
+                  <div class="col-5">
+                      <h6 class="mrp"><i class="fa-solid fa-indian-rupee-sign"></i> {{item.price}}</h6>
+                  </div>
+                  <div class="col-3 pe-1">
+                    <button (click)="addToWishList(item)" class="btn">
+                      <i  class="fa-regular fa-heart"></i>
+                    </button>
+                  </div>
+              </div>
+                  
+        
+              <span>
+                <div >
+                    <span class="rating px-1 py-1">
+                        {{item.rating}}  <i class="fa-solid fa-star"></i> 
+                    </span> 
+
+                    <span>
+                        (23062)
+                    </span>
+                </div> 
+                
+            </span>
+            </div>
+            
+            <div class="card-body d-flex justify-content-around">
+              <a (click)="addToCart(item)" class="btn btn-cart mx-1 col-6">
+                <i class="fa-solid fa-cart-shopping"></i> &nbsp; <small>Add to Cart</small>
+              </a>
+              
+              <a (click)="buyNow(item)" class="btn btn-buy mx-1 col-6">
+                <i class="fa-solid fa-indian-rupee-sign"></i> &nbsp; <small>Buy Now</small>
+              </a>
+            </div>
+          </div>
+    </div>
+</div>
+
+
+<div *ngIf="noProductsfound" class="row justify-content-evenly">
+  <img style="width: 70%;" src="https://crazygiftgallery.com/uploads/no-product.png" alt="No Product found">
+</div>
 
 
 </div>

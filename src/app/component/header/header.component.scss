@@ -78,6 +78,10 @@ header{
         @include countlabels();
     }
 
+    .dropdown-item{
+        font-size: smaller;
+    }
+
        
 }
 

@@ -2,21 +2,21 @@
     <div class="d-flex justify-content-center p-5">
         <div class="col-md-8 col-lg-6  border p-3">
             <form class="form"[formGroup]="loginform" (ngSubmit)="login()">
-                <div class="mb-3 row">
-                    <label for="email" class="col-sm-2 col-form-label">Email</label>
+                <div class="mb-3  row">
+                    <label for="email" class="col-sm-2 col-form-label">Email</label><br>
                     <div class="col-sm-10">
                       <input type="text"  class="form-control" id="email" placeholder="email@example.com" formControlName="email">
                     </div>
                   </div>
                   <div class="mb-3 row">
-                    <label for="password" class="col-sm-2 col-form-label">Password</label>
+                    <label for="password" class="col-sm-2 col-form-label">Password</label><br>
                     <div class="col-sm-10">
                       <input type="password" class="form-control" id="password" formControlName="password">
                     </div>
                 </div>
                     <div class="mb-3 row justify-content-center">
                         <div class="">
-                            <button type="submit" class="col-12 btn btn-login">Login</button>
+                            <button type="submit" class="col-sm-10 btn btn-login">Login</button>
                         </div>
                     </div>
             </form>

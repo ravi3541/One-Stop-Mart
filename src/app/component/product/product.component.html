@@ -3,34 +3,40 @@
     <a routerLink="" class=" btn-back fs-5 "> <i class="fa-solid fa-arrow-left "></i> Back</a>
     <div class="row d-flex justify-content-center">
         
-        <div class="col-5 left"><img src="{{jw[0].img}}" class="card-img-top border" alt="...">
+        <div class="col-5 left"><img src="{{prod[0].img}}" class="card-img-top border" alt="...">
         </div>
         <div class="col-5 right">
             <div class="d-flex flex-column">
-                <h1>{{jw[0].name}}</h1>
-                <h4><i class="fa-solid fa-indian-rupee-sign"></i>{{jw[0].discounted_price}}  &nbsp;  <span class="mrp"><i class="fa-solid fa-indian-rupee-sign"></i> {{jw[0].price}}</span></h4>
+                <h2>{{prod[0].name}}</h2>
+                <h4><i class="fa-solid fa-indian-rupee-sign"></i>{{prod[0].discounted_price}}  &nbsp;  <span class="mrp"><i class="fa-solid fa-indian-rupee-sign"></i> {{prod[0].price}}</span></h4>
 
                 <h4>Description</h4>
-                <p style="white-space: pre-line">{{jw[0].desc.text_desc}}
+                <p style="white-space: pre-line">{{prod[0].desc.text_desc}}
                 </p>
                     <br>
                     <ul>
-                        <li>Weight: {{jw[0].desc.weight}}</li>
-                        <li>Height: {{jw[0].desc.height}}</li>
-                        <li>Width: {{jw[0].desc.width}}</li>
-                        <li>Material: {{jw[0].desc.material}}</li>
+                        <li>Weight: {{prod[0].desc.weight}}</li>
+                        <li>Height: {{prod[0].desc.height}}</li>
+                        <li>Width: {{prod[0].desc.width}}</li>
+                        <li>Material: {{prod[0].desc.material}}</li>
 
                     </ul>
 
                <div><button  class="btn"></button>
                 
-                <a  class="btn btn-wish  me-3 " (click)="addToWishList(jw[0])"><i class="fa-regular fa-heart "></i> </a>
-                <a  class="btn btn-cart me-3 " (click)="addToCart(jw[0])"><i class="fa-solid fa-cart-shopping"></i>&nbsp; <small>Add to Cart</small></a>
-                <a (click)="buyNow(jw[0])" class="btn btn-buy  "><i class="fa-solid fa-indian-rupee-sign"></i>&nbsp; <small>Buy Now</small></a>
-                <button (click)="viewposts()">view posts</button>
+                <a  class="btn btn-wish  me-3 " (click)="addToWishList(prod[0])"><i class="fa-regular fa-heart "></i> </a>
+                <a  class="btn btn-cart me-3 " (click)="addToCart(prod[0])"><i class="fa-solid fa-cart-shopping"></i>&nbsp; <small>Add to Cart</small></a>
+                <a (click)="buyNow(prod[0])" class="btn btn-buy  "><i class="fa-solid fa-indian-rupee-sign"></i>&nbsp; <small>Buy Now</small></a>
             </div>
             </div>
         </div>
     </div>
+
+</div>
+<div class="container-fluid col-11 pt-5 px-5">
+    <div class="" *ngIf="electronics"><app-electronics [electronics]="similar"></app-electronics></div>
+<div class="" *ngIf="groceries"><app-groceries [groceries]="similar"></app-groceries></div>
+<div class="" *ngIf="personalcare"><app-personalCare [personalCare]="similar"></app-personalCare></div>
+<div class="" *ngIf="homekitchen"><app-homeKitchen [homeKitchen]="similar"></app-homeKitchen></div>
 
 </div>
